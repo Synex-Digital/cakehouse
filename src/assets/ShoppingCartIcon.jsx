@@ -2,7 +2,7 @@ const ShoppingCartIcon = () => {
   return (
     <div className="flaticon-shopping-cart bg-white rounded-md min-w-[45px] h-[45px] min-h-[45px] leading-[45px] flex items-center justify-center relative text-2xl text-center text-black">
       <svg
-        width="30px"
+        width="35px"
         height="35px"
         viewBox="0 0 24 24"
         fill="none"

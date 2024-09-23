@@ -78,8 +78,13 @@ const TodaysMenuSection = () => {
         </div>
       </div>
       <img
-        src="assets/images/background/pic4.png"
+        src="https://img.freepik.com/free-psd/beautiful-blue-cake-isolated_23-2151331065.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid"
         alt=""
+        style={{
+          width: "170px",
+          height: "184px",
+          rotate: "-20deg",
+        }}
         className="2xl:right-[20px] xl:right-[20px] 2xl:top-[20px] xl:top-[10px] absolute xl:block hidden"
       />
     </section>
