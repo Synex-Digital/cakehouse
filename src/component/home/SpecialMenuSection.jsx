@@ -1,6 +1,5 @@
 import React from "react";
 import SpecialMenu from "../card/SpecialMenu";
-import { images } from "../../assets/home";
 
 const specialCakes = [
   {
