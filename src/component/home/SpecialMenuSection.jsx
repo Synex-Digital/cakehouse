@@ -42,14 +42,14 @@ const specialCakes = [
 
 const SpecialMenuSection = () => {
   return (
-    <section class="lg:pt-[100px] pt-[50px] lg:pb-[70px] pb-[40px] bg-white relative overflow-hidden section-wrapper-2">
-      <div class="container">
-        <div class="2xl:mb-[50px] mb-[25px] relative mx-auto text-center">
-          <h2 class="font-lobster" style={{ fontFamily: "Lobster, cursive" }}>
+    <section className="lg:pt-[100px] pt-[50px] lg:pb-[70px] pb-[40px] bg-white relative overflow-hidden section-wrapper-2">
+      <div className="container">
+        <div className="2xl:mb-[50px] mb-[25px] relative mx-auto text-center">
+          <h2 className="font-lobster" style={{ fontFamily: "Lobster, cursive" }}>
             Special Menu
           </h2>
         </div>
-        <div class="row">
+        <div className="row">
           {specialCakes.map((cake) => (
             <SpecialMenu
               key={cake.name}
@@ -67,12 +67,12 @@ const SpecialMenuSection = () => {
       <img
         src="assets/images/background/pic2.png"
         alt=""
-        class="bg1 bottom-0 left-[-275px] absolute max-2xl:hidden animate-move"
+        className="bg1 bottom-0 left-[-275px] absolute max-2xl:hidden animate-move"
       />
       <img
         src="assets/images/background/pic3.png"
         alt=""
-        class="bg2 right-[40px] max-2xl:right-0 top-[100px] max-2xl:top-[28px] absolute 2xl:block hidden"
+        className="bg2 right-[40px] max-2xl:right-0 top-[100px] max-2xl:top-[28px] absolute 2xl:block hidden"
       />
     </section>
   );
