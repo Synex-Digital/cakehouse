@@ -14,8 +14,8 @@ const FromOurMenu = ({ name, price, image, nameLink, shopCartLink }) => {
                 objectPosition: "center",
               }}
               src={image}
-              alt=""
-              className="block w-full"
+              alt={name}
+              className="block"
             />
           </div>
           <span className="absolute bg-[var(--secondary-dark)] left-0 text-white rounded-ee-[10px] uppercase py-[4px] px-1.5 font-semibold text-xs leading-[18px] z-[2] group-hover:top-0 top-[-40px] duration-500">

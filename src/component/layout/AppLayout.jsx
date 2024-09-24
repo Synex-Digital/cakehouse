@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Header from "./Header";
 
 const AppLayout = () => (WrappedComponent) => {
@@ -6,6 +7,7 @@ const AppLayout = () => (WrappedComponent) => {
       <>
         <Header />
         <WrappedComponent {...props} />
+        <Footer />
       </>
     );
   };
