@@ -7,6 +7,45 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import { Link } from "react-router-dom";
 
+const data = [
+  {
+    imgSrc:
+      "https://img.freepik.com/premium-photo/man-with-beard-watch-his-left-arm_1249303-8424.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid",
+    date: "2024-09-25",
+    comments: 15,
+    title: "First Article Title",
+    description: "This is the description for the first article.",
+    link: "https://example.com/article1",
+  },
+  {
+    imgSrc:
+      "https://img.freepik.com/premium-photo/smiling-businessman-formal-wear-using-tablet-while-standing-rooftop_1289061-391.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid",
+    date: "2024-09-24",
+    comments: 20,
+    title: "Second Article Title",
+    description: "This is the description for the second article.",
+    link: "https://example.com/article2",
+  },
+  {
+    imgSrc:
+      "https://img.freepik.com/premium-photo/happy-fashionable-handsome-man_739685-5844.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid",
+    date: "2024-09-23",
+    comments: 5,
+    title: "Third Article Title",
+    description: "This is the description for the third article.",
+    link: "https://example.com/article3",
+  },
+  {
+    imgSrc:
+      "https://img.freepik.com/premium-photo/smiling-businessman-formal-wear-using-tablet-while-standing-rooftop_1289061-391.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid",
+    date: "2024-09-22",
+    comments: 10,
+    title: "Fourth Article Title",
+    description: "This is the description for the fourth article.",
+    link: "https://example.com/article4",
+  },
+];
+
 const BlogSlide = ({ imgSrc, date, comments, title, description, link }) => {
   return (
     <div className="slide-box">
@@ -19,7 +58,7 @@ const BlogSlide = ({ imgSrc, date, comments, title, description, link }) => {
               className="h-full object-cover w-full group-hover:scale-110 duration-500"
               style={{
                 width: "244px",
-                height: "250px",
+                height: "244px",
                 objectFit: "cover",
               }}
             />
@@ -86,40 +125,25 @@ const BlogSection = () => {
       className="mySwiper"
     >
       <SwiperSlide>
-        {" "}
         <BlogSlide
-          date={"2023-06-01"}
-          comments={"10"}
-          title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
-          description={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
-          }
-          link={"#"}
-          imgSrc={
-            "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-          }
+          imgSrc={data[0].imgSrc}
+          date={data[0].date}
+          comments={data[0].comments}
+          title={data[0].title}
+          description={data[0].description}
+          link={data[0].link}
         />
       </SwiperSlide>
       <SwiperSlide>
         <BlogSlide
-          date={"2023-06-01"}
-          comments={"10"}
-          title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
-          description={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
-          }
-          link={"#"}
-          imgSrc={
-            "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-          }
+          imgSrc={data[1].imgSrc}
+          date={data[1].date}
+          comments={data[1].comments}
+          title={data[1].title}
+          description={data[1].description}
+          link={data[1].link}
         />
       </SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-      <SwiperSlide>Slide 5</SwiperSlide>
-      <SwiperSlide>Slide 6</SwiperSlide>
-      <SwiperSlide>Slide 7</SwiperSlide>
-      <SwiperSlide>Slide 8</SwiperSlide>
-      <SwiperSlide>Slide 9</SwiperSlide>
     </Swiper>
   );
 };

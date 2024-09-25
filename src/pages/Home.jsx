@@ -10,22 +10,22 @@ import ReservationSection from "../component/home/ReservationSection";
 import CustomersComment from "../component/home/CustomersComment";
 import MasterChefsSection from "../component/home/MasterChefsSection";
 import NewsAndBlogSection from "../component/home/NewsAndBlogSection";
+import Header from "../component/layout/Header";
 
 const Home = () => {
   return (
     <>
       {/* <BannerHome /> */}
-
       <SpecialMenuSection />
       <TodaysMenuSection />
       <QualityServiceSection />
       <FromOurMenuSection />
       <ReservationSection />
       <CustomersComment />
-      <MasterChefsSection/>
-      <NewsAndBlogSection/>
+      {/* <MasterChefsSection /> */}
+      {/* <NewsAndBlogSection /> */}
     </>
   );
 };
 
-export default AppLayout()(Home);
+export default Home;

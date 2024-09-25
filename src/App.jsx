@@ -1,17 +1,26 @@
+// App.js
 import React from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Layout from "./component/layout/AppLayout";
 import Home from "./pages/Home";
+import About from "./pages/page/AboutUS";
+import Faq from "./pages/page/Faq";
+import Team from "./pages/page/Team";
 
-const App = () => {
+function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* Wrap pages inside the Layout */}
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+        </Route>
+        <Route path="/about-us" element={<About />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/team" element={<Team />} />
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;
