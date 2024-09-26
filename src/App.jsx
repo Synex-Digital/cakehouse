@@ -10,6 +10,7 @@ import TeamDetails from "./pages/page/TeamDetails";
 import Testimonial from "./pages/page/Testimonial";
 import Services from "./pages/page/Services";
 import CommingSoon from "./pages/page/CommingSoon";
+import UnderMaintenance from "./pages/page/UnderMaintenance";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/testimonial" element={<Testimonial />} />
         <Route path="/services" element={<Services />} />
         <Route path="/coming-soon" element={<CommingSoon />} />
+        <Route path="/under-maintenance" element={<UnderMaintenance />} />
       </Routes>
     </Router>
   );
