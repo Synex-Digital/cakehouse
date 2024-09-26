@@ -223,19 +223,19 @@ const PageHeader = () => {
                     <Link to="#">Our Menus</Link>
                     <ul className="lg:mt-[15px] sub-part">
                       <li>
-                        <Link to="our-menu-1.html">Menu Style 1</Link>
+                        <Link to="our-menu-1">Menu Style 1</Link>
                       </li>
                       <li>
-                        <Link to="our-menu-2.html">Menu Style 2</Link>
+                        <Link to="our-menu-2">Menu Style 2</Link>
                       </li>
                       <li>
-                        <Link to="our-menu-3.html">Menu Style 3</Link>
+                        <Link to="our-menu-3">Menu Style 3</Link>
                       </li>
                       <li>
-                        <Link to="our-menu-4.html">Menu Style 4</Link>
+                        <Link to="our-menu-4">Menu Style 4</Link>
                       </li>
                       <li>
-                        <Link to="our-menu-5.html">Menu Style 5</Link>
+                        <Link to="our-menu-5">Menu Style 5</Link>
                       </li>
                     </ul>
                   </li>

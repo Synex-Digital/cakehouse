@@ -211,19 +211,19 @@ const Header = () => {
                       <a href="#">Our Menus</a>
                       <ul className="lg:mt-[15px] sub-part">
                         <li>
-                          <a href="our-menu-1.html">Menu Style 1</a>
+                          <Link to="our-menu-1">Menu Style 1</Link>
                         </li>
                         <li>
-                          <a href="our-menu-2.html">Menu Style 2</a>
+                          <Link to="our-menu-2">Menu Style 2</Link>
                         </li>
                         <li>
-                          <a href="our-menu-3.html">Menu Style 3</a>
+                          <Link to="our-menu-3">Menu Style 3</Link>
                         </li>
                         <li>
-                          <a href="our-menu-4.html">Menu Style 4</a>
+                          <Link to="our-menu-4">Menu Style 4</Link>
                         </li>
                         <li>
-                          <a href="our-menu-5.html">Menu Style 5</a>
+                          <Link to="our-menu-5">Menu Style 5</Link>
                         </li>
                       </ul>
                     </li>
