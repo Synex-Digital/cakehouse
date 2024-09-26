@@ -12,6 +12,7 @@ import Facebook from "./icons/Facebook.svg";
 import Instagram from "./icons/Instagram.svg";
 import Twitter from "./icons/Twitter.svg";
 import Linkedin from "./icons/Linkedin.svg";
+import quote from "./icons/quote.svg";
 export const icons = {
   ARROW_DOWN,
   CAKE_Advertisement,
@@ -27,4 +28,5 @@ export const icons = {
   Instagram,
   Twitter,
   Linkedin,
+  quote,
 };

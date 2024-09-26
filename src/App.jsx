@@ -7,6 +7,7 @@ import About from "./pages/page/AboutUS";
 import Faq from "./pages/page/Faq";
 import Team from "./pages/page/Team";
 import TeamDetails from "./pages/page/TeamDetails";
+import Testimonial from "./pages/page/Testimonial";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/faq" element={<Faq />} />
         <Route path="/team" element={<Team />} />
         <Route path="/team-details/:id" element={<TeamDetails />} />
+        <Route path="/testimonial" element={<Testimonial />} />
       </Routes>
     </Router>
   );
