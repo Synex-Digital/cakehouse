@@ -7,6 +7,11 @@ import DeliciousCakes from "./icons/DeliciousCakes.svg";
 import ArtisanBreads from "./icons/ArtisanBreads.svg";
 import GourmetPastries from "./icons/GourmetPastries.svg";
 import HandcraftedChocolates from "./icons/HandcraftedChocolates.svg";
+import Share from "./icons/Share.svg";
+import Facebook from "./icons/Facebook.svg";
+import Instagram from "./icons/Instagram.svg";
+import Twitter from "./icons/Twitter.svg";
+import Linkedin from "./icons/Linkedin.svg";
 export const icons = {
   ARROW_DOWN,
   CAKE_Advertisement,
@@ -17,4 +22,9 @@ export const icons = {
   ArtisanBreads,
   GourmetPastries,
   HandcraftedChocolates,
+  Share,
+  Facebook,
+  Instagram,
+  Twitter,
+  Linkedin,
 };
