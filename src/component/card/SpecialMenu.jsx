@@ -9,6 +9,13 @@ const SpecialMenu = ({ name, image, description, price, alt, href }) => {
             src={image}
             alt={alt}
             className="rounded-full relative group-hover:animate-spin"
+
+            style={{
+              width: "132px",
+              height: "132px",
+              objectFit: "cover",
+              objectPosition: "center",
+            }}
           />
         </div>
         <div className="mt-auto">

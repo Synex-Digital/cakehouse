@@ -1,38 +1,31 @@
 import React from "react";
-import SpecialMenu from "../component/card/SpecialMenu";
-import TodaysMenu from "../component/card/TodaysMenu";
-import QualityServices from "../component/card/QualityServices";
-import FromOurMenu from "../component/card/FromOurMenu";
 import AppLayout from "../component/layout/AppLayout";
+import BannerHome from "../component/specific/BannerHome";
+import SpecialMenuSection from "../component/home/SpecialMenuSection";
+import TodaysMenuSection from "../component/home/TodaysMenuSection";
+import TodaysMenu from "../component/card/TodaysMenu";
+import QualityServiceSection from "../component/home/QualityServiceSection";
+import FromOurMenuSection from "../component/home/FromOurMenuSection";
+import ReservationSection from "../component/home/ReservationSection";
+import CustomersComment from "../component/home/CustomersComment";
+import MasterChefsSection from "../component/home/MasterChefsSection";
+import NewsAndBlogSection from "../component/home/NewsAndBlogSection";
+import Header from "../component/layout/Header";
 
 const Home = () => {
   return (
     <>
-      <SpecialMenu
-        price={"$10"}
-        image={
-          "https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        }
-        description={"lowsuediqwjk"}
-      />
-
-      <TodaysMenu
-        href={"#"}
-        alt={"asdasd"}
-        Image={
-          "https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        }
-        name={"asdasd"}
-        description={"asdasd"}
-        price={"$10"}
-        hoverName={"asdasd"}
-        hoverNameLink={"#"}
-        shopCartLink={"#"}
-      />
-
-      <QualityServices name={"loem"} description={"lorem saka"} />
+      {/* <BannerHome /> */}
+      <SpecialMenuSection />
+      <TodaysMenuSection />
+      <QualityServiceSection />
+      <FromOurMenuSection />
+      <ReservationSection />
+      <CustomersComment />
+      {/* <MasterChefsSection /> */}
+      {/* <NewsAndBlogSection /> */}
     </>
   );
 };
 
-export default AppLayout()(Home);
+export default Home;
