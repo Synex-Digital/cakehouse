@@ -94,9 +94,9 @@ const Services = () => {
   return (
     <PageLaout>
       <PageBanner name={"Services"} />
-      <section class="lg:pt-[100px] sm:pt-[70px] pt-[50px] overflow-hidden lg:pb-[70px] sm:pb-10 pb-5">
-        <div class="container">
-          <div class="row">
+      <section className="lg:pt-[100px] sm:pt-[70px] pt-[50px] overflow-hidden lg:pb-[70px] sm:pb-10 pb-5">
+        <div className="container">
+          <div className="row">
             {services.map((service) => (
               <WhatWeDo
                 key={service.id}
