@@ -13,6 +13,17 @@ import Instagram from "./icons/Instagram.svg";
 import Twitter from "./icons/Twitter.svg";
 import Linkedin from "./icons/Linkedin.svg";
 import quote from "./icons/quote.svg";
+
+import Delivery from "./icons/services/Delivery.svg";
+import Analysis from "./icons/services/Analysis.svg";
+import Design from "./icons/services/Design.svg";
+import Development from "./icons/services/Development.svg";
+import Management from "./icons/services/Management.svg";
+import Marketing from "./icons/services/Marketing.svg";
+import Operation from "./icons/services/Operations.svg";
+import Orders from "./icons/services/Orders.svg";
+import Planning from "./icons/services/Planning.svg";
+import Specialist from "./icons/services/Specialist.svg";
 export const icons = {
   ARROW_DOWN,
   CAKE_Advertisement,
@@ -29,4 +40,14 @@ export const icons = {
   Twitter,
   Linkedin,
   quote,
+  Delivery,
+  Analysis,
+  Design,
+  Development,
+  Management,
+  Marketing,
+  Operation,
+  Orders,
+  Planning,
+  Specialist,
 };
