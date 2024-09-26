@@ -180,7 +180,7 @@ const Header = () => {
                           <Link to="/team">Team</Link>
                         </li>
                         <li>
-                          <Link to="/team-detail">Team Detail</Link>
+                          <Link to="/team-details/3">Team Detail</Link>
                         </li>
                         <li>
                           <Link to="/testimonial">Testimonial</Link>

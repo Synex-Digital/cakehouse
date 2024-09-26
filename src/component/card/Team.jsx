@@ -2,7 +2,7 @@ import React from "react";
 import { icons } from "../../assets/icons";
 import { Link } from "react-router-dom";
 
-const Team = ({ name, image, position }) => {
+const Team = ({ name, image, position,link }) => {
   return (
     <div className="lg:w-1/4 sm:w-1/2 w-full px-[15px] mb-[30px]">
       <div className="shadow-lg rounded-[10px] bg-white overflow-hidden group">
@@ -23,7 +23,7 @@ const Team = ({ name, image, position }) => {
         <div className="content bg-white flex justify-between items-center py-[15px] px-5">
           <div className="clearfix">
             <h6>
-              <Link href="team-detail.html">{name}</Link>
+              <Link to={link}>{name}</Link>
             </h6>
             <span className="font-normal text-sm leading-5 text-primary">
               {position}
