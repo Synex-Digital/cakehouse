@@ -188,22 +188,22 @@ const Header = () => {
                       </ul>
                     </li>
                     <li>
-                      <a href="#">Pages</a>
+                      <Link to="#">Pages</Link>
                       <ul className="lg:mt-[15px] sub-part">
                         <li>
-                          <a href="services.html">Services</a>
+                          <Link to="services">Services</Link>
                         </li>
                         <li>
-                          <a href="service-detail.html">Service Detail</a>
+                          <Link to="service-detail">Service Detail</Link>
                         </li>
                         <li>
-                          <a href="error-404.html">Error 404</a>
+                          <Link to="error-404">Error 404</Link>
                         </li>
                         <li>
-                          <a href="coming-soon.html">Coming Soon</a>
+                          <Link to="coming-soon">Coming Soon</Link>
                         </li>
                         <li>
-                          <a href="under-maintenance.html">Under Maintenance</a>
+                          <Link to="under-maintenance">Under Maintenance</Link>
                         </li>
                       </ul>
                     </li>

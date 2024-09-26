@@ -203,21 +203,19 @@ const PageHeader = () => {
                     <Link to="#">Pages</Link>
                     <ul className="lg:mt-[15px] sub-part">
                       <li>
-                        <Link to="services.html">Services</Link>
+                        <Link to="/services">Services</Link>
                       </li>
                       <li>
-                        <Link to="service-detail.html">Service Detail</Link>
+                        <Link to="/service-detail">Service Detail</Link>
                       </li>
                       <li>
-                        <Link to="error-404.html">Error 404</Link>
+                        <Link to="/error-404">Error 404</Link>
                       </li>
                       <li>
-                        <Link to="coming-soon.html">Coming Soon</Link>
+                        <Link to="/coming-soon">Coming Soon</Link>
                       </li>
                       <li>
-                        <Link to="under-maintenance.html">
-                          Under Maintenance
-                        </Link>
+                        <Link to="/under-maintenance">Under Maintenance</Link>
                       </li>
                     </ul>
                   </li>
