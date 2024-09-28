@@ -17,6 +17,13 @@ import OurMenu3 from "./pages/page/OurMenu3";
 import OurMenu4 from "./pages/page/OurMenu4";
 import OurMenu5 from "./pages/page/OurMenu5";
 
+import ShopeStyle1 from "./pages/shop/ShopeStyle1";
+import ShopeStyle2 from "./pages/shop/ShopeStyle2";
+import ShopeCard from "./pages/shop/ShopeCard";
+import ProductDetail from "./pages/shop/ProductDetail";
+import ShopWishlist from "./pages/shop/ShopWishlist";
+import ShopeCheckout from "./pages/shop/ShopeCheckout";
+
 function App() {
   return (
     <Router>
@@ -38,6 +45,13 @@ function App() {
         <Route path="/our-menu-3" element={<OurMenu3 />} />
         <Route path="/our-menu-4" element={<OurMenu4 />} />
         <Route path="/our-menu-5" element={<OurMenu5 />} />
+
+        <Route path="/shop-style-1" element={<ShopeStyle1 />} />
+        <Route path="/shop-style-2" element={<ShopeStyle2 />} />
+        <Route path="/shop-cart" element={<ShopeCard />} />
+        <Route path="/product-detail" element={<ProductDetail />} />
+        <Route path="/shop-wishlist" element={<ShopWishlist />} />
+        <Route path="/shop-checkout" element={<ShopeCheckout />} />
       </Routes>
     </Router>
   );

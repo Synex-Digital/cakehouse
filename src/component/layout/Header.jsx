@@ -241,22 +241,22 @@ const Header = () => {
                   <a href="#">Shop</a>
                   <ul className="sub-menu">
                     <li className="py-[5px] px-5 relative">
-                      <a href="shop-style-1.html">Shop Style 1</a>
+                      <Link to="shop-style-1">Shop Style 1</Link>
                     </li>
                     <li className="py-[5px] px-5 relative">
-                      <a href="shop-style-2.html">Shop Style 2</a>
+                      <Link to="shop-style-2">Shop Style 2</Link>
                     </li>
                     <li className="py-[5px] px-5 relative">
-                      <a href="shop-cart.html">Shop Cart</a>
+                      <Link to="shop-cart">Shop Cart</Link>
                     </li>
                     <li className="py-[5px] px-5 relative">
-                      <a href="shop-wishlist.html">Shop Wishlist</a>
+                      <Link to="shop-wishlist">Shop Wishlist</Link>
                     </li>
                     <li className="py-[5px] px-5 relative">
-                      <a href="shop-checkout.html">Shop Checkout</a>
+                      <Link to="shop-checkout">Shop Checkout</Link>
                     </li>
                     <li className="py-[5px] px-5 relative">
-                      <a href="product-detail.html">Product Detail</a>
+                      <Link to="product-detail">Product Detail</Link>
                     </li>
                   </ul>
                 </li>

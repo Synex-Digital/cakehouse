@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HoverButton from "./HoverButton";
+import HoverButton, { ShopButton } from "./HoverButton";
 
 const PageHeader = () => {
   return (
@@ -238,24 +238,15 @@ const PageHeader = () => {
               <li className="sub-menu-down">
                 <Link to="#">Shop</Link>
                 <ul className="sub-menu">
-                  <li className="py-[5px] px-5 relative">
-                    <Link to="shop-style-1.html">Shop Style 1</Link>
-                  </li>
-                  <li className="py-[5px] px-5 relative">
-                    <Link to="shop-style-2.html">Shop Style 2</Link>
-                  </li>
-                  <li className="py-[5px] px-5 relative">
-                    <Link to="shop-cart.html">Shop Cart</Link>
-                  </li>
-                  <li className="py-[5px] px-5 relative">
-                    <Link to="shop-wishlist.html">Shop Wishlist</Link>
-                  </li>
-                  <li className="py-[5px] px-5 relative">
-                    <Link to="shop-checkout.html">Shop Checkout</Link>
-                  </li>
-                  <li className="py-[5px] px-5 relative">
-                    <Link to="product-detail.html">Product Detail</Link>
-                  </li>
+                  <ShopButton name={"Shop Style 1"} link={"/shop-style-1"} />
+                  <ShopButton name={"Shop Style 2"} link={"/shop-style-2"} />
+                  <ShopButton name={"Shop Cart"} link={"/shop-cart"} />
+                  <ShopButton name={"Shop Wishlist"} link={"/shop-wishlist"} />
+                  <ShopButton name={"Shop Checkout"} link={"/shop-checkout"} />
+                  <ShopButton
+                    name={"Product Detail"}
+                    link={"/product-detail"}
+                  />
                 </ul>
               </li>
               <li className="sub-menu-down has-mega-menu">
