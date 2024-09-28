@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import HoverButton from "./HoverButton";
 
 const PageHeader = () => {
   return (
@@ -222,21 +223,11 @@ const PageHeader = () => {
                   <li>
                     <Link to="#">Our Menus</Link>
                     <ul className="lg:mt-[15px] sub-part">
-                      <li>
-                        <Link to="our-menu-1">Menu Style 1</Link>
-                      </li>
-                      <li>
-                        <Link to="our-menu-2">Menu Style 2</Link>
-                      </li>
-                      <li>
-                        <Link to="our-menu-3">Menu Style 3</Link>
-                      </li>
-                      <li>
-                        <Link to="our-menu-4">Menu Style 4</Link>
-                      </li>
-                      <li>
-                        <Link to="our-menu-5">Menu Style 5</Link>
-                      </li>
+                      <HoverButton name={"Menu Style 1"} link={"/our-menu-1"} />
+                      <HoverButton name={"Menu Style 2"} link={"/our-menu-2"} />
+                      <HoverButton name={"Menu Style 3"} link={"/our-menu-3"} />
+                      <HoverButton name={"Menu Style 4"} link={"/our-menu-4"} />
+                      <HoverButton name={"Menu Style 5"} link={"/our-menu-5"} />
                     </ul>
                   </li>
                   <li className="header-adv lg:table-cell hidden pt-[30px] px-2.5 pb-5 relative align-top w-1/4">
