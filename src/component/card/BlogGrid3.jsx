@@ -25,15 +25,25 @@ const BlogGrid3 = ({ img, name, view, date, description }) => {
           <div class="mb-2.5">
             <ul class="flex">
               <li class="inline-block relative text-[13px] mr-3">
-                <Link to={"#"} class="text-sm font-medium text-bodycolor flex items-center gap-1">
-                  <i class="flaticon-calendar-date text-xs text-primary mr-[5px] translate-y-[1px] scale-150"><CgCalendarDates/></i>{" "}
+                <Link
+                  to={"#"}
+                  class="text-sm font-medium text-bodycolor flex items-center gap-1"
+                >
+                  <i class="flaticon-calendar-date text-xs text-primary mr-[5px] translate-y-[1px] scale-150">
+                    <CgCalendarDates />
+                  </i>{" "}
                   {date}
                 </Link>
               </li>
               <li class="inline-block relative text-[13px] mr-3">
-                <Link to={"#"} class="text-sm font-medium text-bodycolor flex items-center gap-1">
-                  <i class="flaticon-chat-bubble text-base text-primary mr-[5px]"><IoChatbubbleEllipsesOutline /></i>{" "}
-                  {view}{" "}
+                <Link
+                  to={"#"}
+                  class="text-sm font-medium text-bodycolor flex items-center gap-1"
+                >
+                  <i class="flaticon-chat-bubble text-base text-primary mr-[5px]">
+                    <IoChatbubbleEllipsesOutline />
+                  </i>{" "}
+                  {view}
                 </Link>
               </li>
             </ul>

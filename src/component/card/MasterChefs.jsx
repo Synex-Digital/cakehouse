@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MasterChefs = ({ image, name, position }) => {
   return (
@@ -20,7 +21,7 @@ const MasterChefs = ({ image, name, position }) => {
           <div className="content bg-white flex justify-between items-center py-[15px] px-5">
             <div className="clearfix">
               <h6>
-                <a href="team-detail.html"> {name}</a>
+                <Link to="team-detail.html"> {name}</Link>
               </h6>
               <span className="font-normal text-sm leading-5 text-primary">
                 {position}
@@ -28,44 +29,44 @@ const MasterChefs = ({ image, name, position }) => {
             </div>
             <ul className="team-social">
               <li>
-                <a
-                  href="javascript:void(0);"
+                <Link
+                  to="#"
                   className="text-xl inline-block h-10 w-10 leading-10 text-center rounded-lg bg-primary text-white pt-[2px]"
                 >
                   <i className="flaticon-share"></i>
-                </a>
+                </Link>
                 <ul className="sub-team-social absolute bottom-[20px] z-[1] w-10 rounded-lg opacity-0 duration-500 hover:opacity-100 hover:pb-[80px]">
                   <li className="mb-2 relative">
-                    <a
-                      href="javascript:void(0);"
+                    <Link
+                      to="#"
                       className="text-white duration-500 text-center text-lg bg-[#4867AA] h-10 w-10 flex items-center justify-center rounded-lg"
                     >
                       <i className="fab fa-facebook-f"></i>
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2 relative">
-                    <a
-                      href="javascript:void(0);"
+                    <Link
+                      to="#"
                       className="text-white duration-500 text-center text-lg bg-[#81B2DF] h-10 w-10 flex items-center justify-center rounded-lg"
                     >
                       <i className="fab fa-twitter"></i>
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2 relative">
-                    <a
-                      href="javascript:void(0);"
+                    <Link
+                      to="#"
                       className="text-white duration-500 text-center text-lg bg-[#D74141] h-10 w-10 flex items-center justify-center rounded-lg"
                     >
                       <i className="fab fa-instagram"></i>
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2 relative">
-                    <a
-                      href="javascript:void(0);"
+                    <Link
+                      to="#"
                       className="text-white duration-500 text-center text-lg bg-[#3A9DF9] h-10 w-10 flex items-center justify-center rounded-lg"
                     >
                       <i className="fa-brands fa-linkedin-in"></i>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>

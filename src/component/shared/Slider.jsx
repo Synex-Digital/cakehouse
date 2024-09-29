@@ -1,76 +1,90 @@
 import React from "react";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import ProductCard from "../card/FromOurMenu";
-
-const Slider = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
+import Slider from "react-slick";
+import FromOurMenu from "../card/FromOurMenu";
+const products = [
+  {
+    id: 1,
+    name: "Classic Panjabi",
+    img: "https://example.com/images/product1.jpg",
+    price: 1200,
+    linkToProduct: "https://example.com/product/1",
+    linkToCart: "https://example.com/cart/add/1",
+  },
+  {
+    id: 2,
+    name: "Modern Panjabi",
+    img: "https://example.com/images/product2.jpg",
+    price: 1500,
+    linkToProduct: "https://example.com/product/2",
+    linkToCart: "https://example.com/cart/add/2",
+  },
+  {
+    id: 3,
+    name: "Designer Panjabi",
+    img: "https://example.com/images/product3.jpg",
+    price: 1800,
+    linkToProduct: "https://example.com/product/3",
+    linkToCart: "https://example.com/cart/add/3",
+  },
+  {
+    id: 4,
+    name: "Luxury Panjabi",
+    img: "https://example.com/images/product4.jpg",
+    price: 2000,
+    linkToProduct: "https://example.com/product/4",
+    linkToCart: "https://example.com/cart/add/4",
+  },
+];
+function MultipleItems() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
   };
   return (
-    <Carousel responsive={responsive}>
-      <div>
-        <ProductCard
-          imageSrc="https://img.freepik.com/premium-photo/sticky-toffee-pudding-natural-sunlight-sticky-toffee-pudding-dessert-close-up_1020697-225745.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid"
-          title="Burger"
-          price="50.00"
-          label="Top Seller"
-          labelColor="bg-[var(--secondary-dark)]"
-          linkToProduct="our-menu-1.html"
-          linkToCart="shop-cart.html"
-        />
-      </div>
-      <div>
-        <ProductCard
-          imageSrc="https://img.freepik.com/premium-photo/sticky-toffee-pudding-natural-sunlight-sticky-toffee-pudding-dessert-close-up_1020697-225745.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid"
-          title="Burger"
-          price="50.00"
-          label="Top Seller"
-          labelColor="bg-[var(--secondary-dark)]"
-          linkToProduct="our-menu-1.html"
-          linkToCart="shop-cart.html"
-        />
-      </div>
-      <div>
-        <ProductCard
-          imageSrc="https://img.freepik.com/premium-photo/sticky-toffee-pudding-natural-sunlight-sticky-toffee-pudding-dessert-close-up_1020697-225745.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid"
-          title="Burger"
-          price="50.00"
-          label="Top Seller"
-          labelColor="bg-[var(--secondary-dark)]"
-          linkToProduct="our-menu-1.html"
-          linkToCart="shop-cart.html"
-        />
-      </div>
-      <div>
-        <ProductCard
-          imageSrc="https://img.freepik.com/premium-photo/sticky-toffee-pudding-natural-sunlight-sticky-toffee-pudding-dessert-close-up_1020697-225745.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid"
-          title="Burger"
-          price="50.00"
-          label="Top Seller"
-          labelColor="bg-[var(--secondary-dark)]"
-          linkToProduct="our-menu-1.html"
-          linkToCart="shop-cart.html"
-        />
-      </div>
-    </Carousel>
+    <div className="slider-container">
+      <Slider {...settings}>
+        {products.map((item) => (
+          <div key={item.id}>
+            <FromOurMenu
+              key={item.id}
+              name={item.name}
+              img={item.img}
+              price={item.price}
+              linkToProduct={item.linkToProduct}
+              linkToCart={item.linkToCart}
+            />
+          </div>
+        ))}
+        <div>
+          <h3>2</h3>
+        </div>
+        <div>
+          <h3>3</h3>
+        </div>
+        <div>
+          <h3>4</h3>
+        </div>
+        <div>
+          <h3>5</h3>
+        </div>
+        <div>
+          <h3>6</h3>
+        </div>
+        <div>
+          <h3>7</h3>
+        </div>
+        <div>
+          <h3>8</h3>
+        </div>
+        <div>
+          <h3>9</h3>
+        </div>
+      </Slider>
+    </div>
   );
-};
+}
 
-export default Slider;
+export default MultipleItems;
