@@ -25,6 +25,9 @@ import ProductDetail from "./pages/shop/ProductDetail";
 import ShopWishlist from "./pages/shop/ShopWishlist";
 import ShopeCheckout from "./pages/shop/ShopeCheckout";
 
+import BlogGrid2 from "./pages/blog/BlogGrid2";
+import BlogGrid3 from "./pages/blog/BlogGrid3";
+
 function App() {
   return (
     <Router>
@@ -54,6 +57,9 @@ function App() {
         <Route path="/product-detail" element={<ProductDetail />} />
         <Route path="/shop-wishlist" element={<ShopWishlist />} />
         <Route path="/shop-checkout" element={<ShopeCheckout />} />
+
+        <Route path="/blog-grid-2" element={<BlogGrid2 />} />
+        <Route path="/blog-grid-3" element={<BlogGrid3 />} />
       </Routes>
     </Router>
   );

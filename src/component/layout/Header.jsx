@@ -1,7 +1,8 @@
 import React from "react";
 
-import { icons } from "../../assets/icons";
 import { Link } from "react-router-dom";
+import { icons } from "../../assets/icons";
+import HoverButton from "../shared/HoverButton";
 
 const Header = () => {
   return (
@@ -267,22 +268,16 @@ const Header = () => {
                       {" "}
                       <a href="#">Blog Grid</a>
                       <ul className="sub-part lg:mt-[15px]">
-                        <li>
-                          <a href="blog-grid-2.html">Blog Grid 2</a>
-                        </li>
-                        <li>
-                          <a href="blog-grid-3.html">Blog Grid 3</a>
-                        </li>
-                        <li>
-                          <a href="blog-grid-left-sidebar.html">
-                            Blog Grid Left Sidebar
-                          </a>
-                        </li>
-                        <li>
-                          <a href="blog-grid-right-sidebar.html">
-                            Blog Grid Right Sidebar
-                          </a>
-                        </li>
+                        <HoverButton name={"Blog Grid 2"} link="/blog-grid-2" />
+                        <HoverButton name={"Blog Grid 3"} link="/blog-grid-3" />
+                        <HoverButton
+                          name={"Blog Grid Left Sidebar"}
+                          link="/blog-grid-left-sidebar"
+                        />
+                        <HoverButton
+                          name={"Blog Grid Right Sidebar"}
+                          link="/blog-grid-right-sidebar"
+                        />
                       </ul>
                     </li>
                     <li>

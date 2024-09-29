@@ -1,4 +1,5 @@
 import React from "react";
+import PageHeader from "../../component/shared/PageHeader";
 
 const ErrorPage = () => {
   return (
@@ -6,7 +7,7 @@ const ErrorPage = () => {
       <PageHeader />
       <div className="container">
         <div
-          className={`inner-content text-center relative z-10 lg:pt-[150px] pt-[80px] bg-[url('${error}')] bg-cover bg-center h-screen`}
+          className={`inner-content text-center relative z-10 lg:pt-[150px] pt-[80px] bg-[url'')] bg-cover bg-center h-screen`}
         >
           <h1
             className="error-head font-lobster mx-auto mr-5 font-normal md:text-[140px] mb-5 text-[120px] leading-[1] text-white"

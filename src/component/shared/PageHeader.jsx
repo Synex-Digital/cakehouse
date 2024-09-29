@@ -256,22 +256,16 @@ const PageHeader = () => {
                     {" "}
                     <Link to="#">Blog Grid</Link>
                     <ul className="sub-part lg:mt-[15px]">
-                      <li>
-                        <Link to="blog-grid-2.html">Blog Grid 2</Link>
-                      </li>
-                      <li>
-                        <Link to="blog-grid-3.html">Blog Grid 3</Link>
-                      </li>
-                      <li>
-                        <Link to="blog-grid-left-sidebar.html">
-                          Blog Grid Left Sidebar
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="blog-grid-right-sidebar.html">
-                          Blog Grid Right Sidebar
-                        </Link>
-                      </li>
+                      <HoverButton name={"Blog Grid 2"} link="/blog-grid-2" />
+                      <HoverButton name={"Blog Grid 3"} link="/blog-grid-3" />
+                      <HoverButton
+                        name={"Blog Grid Left Sidebar"}
+                        link="/blog-grid-left-sidebar"
+                      />
+                      <HoverButton
+                        name={"Blog Grid Right Sidebar"}
+                        link="/blog-grid-right-sidebar"
+                      />
                     </ul>
                   </li>
                   <li>
