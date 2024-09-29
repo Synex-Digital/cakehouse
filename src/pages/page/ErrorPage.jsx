@@ -1,6 +1,4 @@
 import React from "react";
-import PageHeader from "../../component/shared/PageHeader";
-import { error } from "../../assets/pic";
 
 const ErrorPage = () => {
   return (

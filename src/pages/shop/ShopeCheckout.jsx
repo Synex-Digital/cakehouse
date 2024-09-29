@@ -1,8 +1,36 @@
 import React from "react";
 
+import { FaCircle } from "react-icons/fa";
+import ShopCheckoutCard from "../../component/card/ShopCheckout";
 import PageLayout from "../../component/layout/PageLaout";
 import PageBanner from "../../component/shared/PageBanner";
 import ShopeCheckoutForm from "../../component/specific/ShopeCheckOutFrom";
+
+// Array of objects with image, title, and price
+const products = [
+  {
+    id: 1,
+    title: "Classic Panjabi",
+    price: 1200,
+    image:
+      "https://img.freepik.com/free-photo/side-view-cake-with-strawberries-crumbs-silver-tray_140725-12096.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid",
+  },
+  {
+    id: 2,
+    title: "Modern Panjabi",
+    price: 1500,
+    image:
+      "https://img.freepik.com/premium-photo/twotiered-chocolate-cake-with-strawberries-dark-liquid-chocolate-dripping-down-sides-e_1309778-74716.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid",
+  },
+  {
+    id: 3,
+    title: "Designer Panjabi",
+    price: 1800,
+    image:
+      "https://img.freepik.com/free-photo/view-delicious-wedding-cake-with-ornate-decorations_23-2151379530.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid",
+  },
+];
+
 const ShopeCheckout = () => {
   return (
     <PageLayout>
@@ -11,10 +39,12 @@ const ShopeCheckout = () => {
       <section className="lg:pt-[100px] sm:pt-[70px] pt-[50px] lg:pb-[100px] sm:pb-10 pb-5 relative bg-white">
         <div className="container">
           <ShopeCheckoutForm />
-          {/* <div className="dz-divider bg-gray-dark icon-center my-12 relative h-[1px] bg-[#d3d3d3]">
-            <i className="fa fa-circle bg-white text-primary absolute left-[50%] text-center top-[-8px] block"></i>
-          </div> */}
-          {/* <div className="row">
+          <div className="dz-divider bg-gray-dark icon-center my-12 relative h-[1px] bg-[#d3d3d3]">
+            <i className="fa fa-circle bg-white text-primary absolute left-[50%] text-center top-[-8px] block">
+              <FaCircle />
+            </i>
+          </div>
+          <div className="row">
             <div className="lg:w-1/2 w-full px-[15px]">
               <div className="widget">
                 <h4 className="widget-title xl:mb-[30px] mb-5 pb-3 relative">
@@ -35,66 +65,14 @@ const ShopeCheckout = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td className="p-[15px] font-medium border border-[#00000020] product-item-img">
-                        <img
-                          src="assets/images/gallery/small/pic4.jpg"
-                          alt="/"
-                          className="w-[100px] rounded-md"
-                        />
-                      </td>
-                      <td className="p-[15px] font-medium border border-[#00000020] text-bodycolor">
-                        Prduct Item 4
-                      </td>
-                      <td className="p-[15px] font-medium border border-[#00000020] text-bodycolor">
-                        $36.00
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="p-[15px] font-medium product-item-img">
-                        <img
-                          src="assets/images/gallery/small/pic3.jpg"
-                          alt="/"
-                          className="w-[100px] rounded-md"
-                        />
-                      </td>
-                      <td className="p-[15px] font-medium border border-[#00000020] text-bodycolor">
-                        Prduct Item 3
-                      </td>
-                      <td className="p-[15px] font-medium border border-[#00000020] text-bodycolor">
-                        $25.00
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="p-[15px] font-medium border border-[#00000020] product-item-img">
-                        <img
-                          src="assets/images/gallery/small/pic2.jpg"
-                          alt="/"
-                          className="w-[100px] rounded-md"
-                        />
-                      </td>
-                      <td className="p-[15px] font-medium border border-[#00000020] text-bodycolor">
-                        Prduct Item 2
-                      </td>
-                      <td className="p-[15px] font-medium border border-[#00000020] text-bodycolor">
-                        $22.00
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="p-[15px] font-medium border border-[#00000020] product-item-img">
-                        <img
-                          src="assets/images/gallery/small/pic1.jpg"
-                          alt="/"
-                          className="w-[100px] rounded-md"
-                        />
-                      </td>
-                      <td className="p-[15px] font-medium border border-[#00000020] text-bodycolor">
-                        Prduct Item 1
-                      </td>
-                      <td className="p-[15px] font-medium border border-[#00000020] text-bodycolor">
-                        $28.00
-                      </td>
-                    </tr>
+                    {products.map((product) => (
+                      <ShopCheckoutCard
+                        key={product.id}
+                        img={product.image}
+                        title={product.title}
+                        price={product.price}
+                      />
+                    ))}
                   </tbody>
                 </table>
               </div>
@@ -181,12 +159,12 @@ const ShopeCheckout = () => {
                     value="submit"
                     name="submit"
                   >
-                    Place Order Now{" "}
+                    Place Order Now
                   </button>
                 </div>
               </form>
             </div>
-          </div> */}
+          </div>
         </div>
       </section>
     </PageLayout>
