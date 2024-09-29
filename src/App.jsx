@@ -16,6 +16,7 @@ import OurMenu2 from "./pages/page/OurMenu2";
 import OurMenu3 from "./pages/page/OurMenu3";
 import OurMenu4 from "./pages/page/OurMenu4";
 import OurMenu5 from "./pages/page/OurMenu5";
+import ErrorPage from "./pages/page/ErrorPage";
 
 import ShopeStyle1 from "./pages/shop/ShopeStyle1";
 import ShopeStyle2 from "./pages/shop/ShopeStyle2";
@@ -45,6 +46,7 @@ function App() {
         <Route path="/our-menu-3" element={<OurMenu3 />} />
         <Route path="/our-menu-4" element={<OurMenu4 />} />
         <Route path="/our-menu-5" element={<OurMenu5 />} />
+        <Route path="*" element={<ErrorPage />} />
 
         <Route path="/shop-style-1" element={<ShopeStyle1 />} />
         <Route path="/shop-style-2" element={<ShopeStyle2 />} />
