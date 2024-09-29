@@ -27,6 +27,7 @@ import ShopeCheckout from "./pages/shop/ShopeCheckout";
 
 import BlogGrid2 from "./pages/blog/BlogGrid2";
 import BlogGrid3 from "./pages/blog/BlogGrid3";
+import ServicesDetail from "./pages/page/ServicesDetail";
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
         <Route path="/product-detail" element={<ProductDetail />} />
         <Route path="/shop-wishlist" element={<ShopWishlist />} />
         <Route path="/shop-checkout" element={<ShopeCheckout />} />
+        <Route path="/service-detail" element={<ServicesDetail />} />
 
         <Route path="/blog-grid-2" element={<BlogGrid2 />} />
         <Route path="/blog-grid-3" element={<BlogGrid3 />} />
