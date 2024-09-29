@@ -15,7 +15,7 @@ import Header from "../component/layout/Header";
 const Home = () => {
   return (
     <>
-      {/* <BannerHome /> */}
+      <BannerHome />
       <SpecialMenuSection />
       <TodaysMenuSection />
       <QualityServiceSection />
