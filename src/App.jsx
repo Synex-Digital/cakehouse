@@ -27,11 +27,11 @@ import ShopeCheckout from "./pages/shop/ShopeCheckout";
 
 import BlogGrid2 from "./pages/blog/BlogGrid2";
 import BlogGrid3 from "./pages/blog/BlogGrid3";
-import BlogGridLeftSidebar from './pages/blog/BlogGridLeftSidebar';
-
+import BlogGridLeftSidebar from "./pages/blog/BlogGridLeftSidebar";
 
 import ServicesDetail from "./pages/page/ServicesDetail";
 import ContactUs from "./pages/ContactUs";
+import BlogGridRightSidebar from "./pages/blog/BlogGridRightSidebar";
 
 function App() {
   return (
@@ -67,7 +67,14 @@ function App() {
 
         <Route path="/blog-grid-2" element={<BlogGrid2 />} />
         <Route path="/blog-grid-3" element={<BlogGrid3 />} />
-        <Route path="/blog-grid-left-sidebar" element={<BlogGridLeftSidebar />} />
+        <Route
+          path="/blog-grid-left-sidebar"
+          element={<BlogGridLeftSidebar />}
+        />
+        <Route
+          path="/blog-grid-right-sidebar"
+          element={<BlogGridRightSidebar />}
+        />
       </Routes>
     </Router>
   );

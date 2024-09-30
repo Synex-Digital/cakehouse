@@ -47,7 +47,8 @@ const blogPostsLeftSidebar = [
 const blogPost = [
   {
     id: 1,
-    imgSrc: "https://img.freepik.com/free-photo/decorating-cake_1098-13807.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid",
+    imgSrc:
+      "https://img.freepik.com/free-photo/decorating-cake_1098-13807.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid",
     title: "The Ultimate Guide to Baking Cakes",
     description:
       "Learn how to bake perfect cakes every time with our step-by-step guide.",
@@ -57,7 +58,8 @@ const blogPost = [
   },
   {
     id: 2,
-    imgSrc: "https://img.freepik.com/free-photo/confectioner-uniform-decorates-cake_1157-33251.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid",
+    imgSrc:
+      "https://img.freepik.com/free-photo/confectioner-uniform-decorates-cake_1157-33251.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid",
     title: "Top 10 Cake Decorating Ideas",
     description:
       "Get inspired by these stunning cake decorating ideas for any occasion.",
@@ -67,7 +69,8 @@ const blogPost = [
   },
   {
     id: 3,
-    imgSrc: "https://img.freepik.com/premium-photo/decadent-red-velvet-cake-perfect-special-occasions_1168676-71883.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid",
+    imgSrc:
+      "https://img.freepik.com/premium-photo/decadent-red-velvet-cake-perfect-special-occasions_1168676-71883.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid",
     title: "How to Make a Perfect Red Velvet Cake",
     description:
       "Master the art of making the classic red velvet cake with our easy recipe.",
@@ -77,7 +80,8 @@ const blogPost = [
   },
   {
     id: 4,
-    imgSrc: "https://img.freepik.com/free-photo/surreal-food-online-content-creation_23-2151368796.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid",
+    imgSrc:
+      "https://img.freepik.com/free-photo/surreal-food-online-content-creation_23-2151368796.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid",
     title: "5 Cake Flavors You Must Try",
     description:
       "Discover unique and delicious cake flavors that will wow your taste buds.",
@@ -87,13 +91,38 @@ const blogPost = [
   },
 ];
 
-const BlogGridLeftSidebar = () => {
+const BlogGridRightSidebar = () => {
   return (
     <PageLaout>
       <PageBanner name={"Blog Grid Left Sidebar"} />
       <section className="lg:pt-[100px] sm:pt-[70px] pt-[50px] lg:pb-[70px] sm:pb-10 pb-5">
         <div className="container">
-          <div className="row">
+          <div className="flex flex-wrap flex-row-reverse">
+            <div className="lg:w-4/6 w-full px-[15px] lg:order-2 order-1 mb-[30px]">
+              <div className="row justify-center loadmore-content">
+                {blogPost.map((item) => (
+                  <BlogGridCard
+                    imgSrc={item.imgSrc}
+                    title={item.title}
+                    description={item.description}
+                    date={item.date}
+                    comments={item.comments}
+                    postLink={item.postLink}
+                    key={item.id}
+                  />
+                ))}
+              </div>
+
+              <div className="text-center mt-[10px]">
+                <Link
+                  className="btn btn-primary dz-load-more btn-hover-2"
+                  href="#"
+                  rel="assets/ajax/blog-list-sidebar.html"
+                >
+                  Load More
+                </Link>
+              </div>
+            </div>
             <div className="lg:w-1/3 w-full px-[15px] lg:order-1 order-2">
               <aside className="lg:sticky pr-5 max-xl:pr-0 pb-[1px] top-[100px]">
                 <div className="md:mb-[50px] mb-[30px]">
@@ -247,32 +276,6 @@ const BlogGridLeftSidebar = () => {
                 </div>
               </aside>
             </div>
-
-            <div className="lg:w-4/6 w-full px-[15px] lg:order-2 order-1 mb-[30px]">
-              <div className="row justify-center loadmore-content">
-                {blogPost.map((item) => (
-                  <BlogGridCard
-                    imgSrc={item.imgSrc}
-                    title={item.title}
-                    description={item.description}
-                    date={item.date}
-                    comments={item.comments}
-                    postLink={item.postLink}
-                    key={item.id}
-                  />
-                ))}
-              </div>
-
-              <div className="text-center mt-[10px]">
-                <Link
-                  className="btn btn-primary dz-load-more btn-hover-2"
-                  href="#"
-                  rel="assets/ajax/blog-list-sidebar.html"
-                >
-                  Load More
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -280,4 +283,4 @@ const BlogGridLeftSidebar = () => {
   );
 };
 
-export default BlogGridLeftSidebar;
+export default BlogGridRightSidebar;
