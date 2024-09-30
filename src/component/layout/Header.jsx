@@ -3,6 +3,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { icons } from "../../assets/icons";
 import HoverButton from "../shared/HoverButton";
+import { FaRegUser } from "react-icons/fa6";
+import { FaShoppingBag } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -31,12 +33,16 @@ const Header = () => {
                       className="bg-white text-[var(--title)] user-btn white-btn flex items-center justify-center w-[45px] h-[45px] rounded-md shadow-[0_10px_10px_0_rgba(0,0,0,0.1)]"
                       href="#offcanvasLogin"
                     >
-                      <i className="flaticon-user text-2xl inline-flex"></i>
+                      <i className="flaticon-user text-2xl inline-flex">
+                        <FaRegUser />
+                      </i>
                     </a>
                   </li>
                   <li className="inline-block">
                     <button className="cart-btn bg-white white-btn flex items-center justify-center w-[45px] h-[45px] rounded-md shadow-[0_10px_10px_0_rgba(0,0,0,0.1)]">
-                      <i className="flaticon-shopping-bag-1 text-2xl inline-flex ping-bag-1"></i>
+                      <i className="flaticon-shopping-bag-1 text-2xl inline-flex ping-bag-1">
+                        <FaShoppingBag />
+                      </i>
                       <span className="badge absolute top-[3px] right-[-6px] p-0 h-5 w-5 font-medium text-xs leading-5 bg-[#666666] text-white rounded-[10px]">
                         6
                       </span>

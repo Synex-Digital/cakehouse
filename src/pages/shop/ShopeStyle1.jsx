@@ -2,41 +2,46 @@ import React from "react";
 import PageLaout from "../../component/layout/PageLaout";
 import PageBanner from "../../component/shared/PageBanner";
 import ShopStyle1Card from "../../component/card/ShopStyle1";
+
 const products = [
   {
     id: 1,
-    imageUrl: "https://example.com/images/item1.jpg",
-    itemName: "Wireless Earbuds",
-    vendorName: "Tech Vendor",
+    imageUrl:
+      "https://img.freepik.com/free-photo/decadent-chocolate-dessert-with-fresh-raspberry-mint-leaf-generated-by-artificial-intellingence_25030-63058.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid",
+    itemName: "Chocolate Fudge Cake",
+    vendorName: "Sweet Treats Bakery",
     deliveryTime: "3-5 days",
-    price: 50.99,
+    price: 25.99,
     rating: 4.7,
   },
   {
     id: 2,
-    imageUrl: "https://example.com/images/item2.jpg",
-    itemName: "Smartphone",
-    vendorName: "Gadget World",
+    imageUrl:
+      "https://img.freepik.com/free-photo/red-velvet-cake-slices-with-yellof-cherry-top-mint-leaves_114579-2593.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid",
+    itemName: "Red Velvet Cake",
+    vendorName: "Gourmet Cakes",
     deliveryTime: "2-4 days",
-    price: 799.99,
+    price: 45.99,
     rating: 4.8,
   },
   {
     id: 3,
-    imageUrl: "https://example.com/images/item3.jpg",
-    itemName: "Gaming Laptop",
-    vendorName: "Pro Tech",
+    imageUrl:
+      "https://img.freepik.com/premium-photo/slice-red-velvet-cake-sits-plate-with-fork_996043-954.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid",
+    itemName: "Vanilla Sponge Cake",
+    vendorName: "Pro Bakes",
     deliveryTime: "5-7 days",
-    price: 1200.49,
+    price: 30.49,
     rating: 4.5,
   },
   {
     id: 4,
-    imageUrl: "https://example.com/images/item4.jpg",
-    itemName: "4K Monitor",
-    vendorName: "Display Hub",
+    imageUrl:
+      "https://img.freepik.com/premium-photo/ultrarealistic-strawberry-cheesecake-slice-outdoor-picnic_1290445-36.jpg?ga=GA1.1.1096800660.1727073327&semt=ais_hybrid",
+    itemName: "Strawberry Cheesecake",
+    vendorName: "Dessert Delights",
     deliveryTime: "3-6 days",
-    price: 399.99,
+    price: 50.99,
     rating: 4.6,
   },
 ];
@@ -256,121 +261,17 @@ const ShopeStyle1 = () => {
                 </a>
               </div>
 
-              <div class="dz-shop-card style-1 flex border border-[#0000001a] rounded-[10px] mb-5 overflow-hidden duration-500 hover:border-transparent hover:shadow-[0px_15px_55px_rgba(34,34,34,0.15)] relative">
-                <div class="dz-media w-[100px] min-w-[100px]">
-                  <img
-                    src="assets/images/shop/pic1.jpg"
-                    alt="/"
-                    class="h-full"
-                  />
-                </div>
-                <div class="dz-content sm:p-5 p-2 flex flex-col w-full">
-                  <div class="dz-head mb-4 flex items-center justify-between">
-                    <h6 class="dz-name mb-0 flex items-center text-base">
-                      <svg
-                        class="mr-[10px]"
-                        width="18"
-                        height="18"
-                        viewBox="0 0 18 18"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <rect
-                          x="0.5"
-                          y="0.5"
-                          width="16"
-                          height="16"
-                          stroke="#0F8A65"
-                        />
-                        <circle cx="8.5" cy="8.5" r="5.5" fill="#0F8A65" />
-                      </svg>
-                      <a href="javascript:void(0);" class="menuDetailModal">
-                        Double Patty Burger
-                      </a>
-                    </h6>
-                    <div class="rate bg-[#FE9F10] text-white rounded-[5px] py-[2px] px-[5px] font-medium text-[13px] leading-[18px] inline-block sm:static absolute bottom-[10px] right-3">
-                      <i class="fa-solid fa-star"></i> 4.5
-                    </div>
-                  </div>
-                  <div class="dz-body sm:flex block justify-between">
-                    <ul class="dz-meta flex mx-[-10px]">
-                      <li class="leading-[21px] mx-[10px] text-sm text-[#727272]">
-                        By{" "}
-                        <span class="text-primary font-medium">
-                          {" "}
-                          Burger Farm
-                        </span>
-                      </li>
-                      <li class="leading-[21px] mx-[10px] text-sm text-[#727272]">
-                        <i class="flaticon-scooter mr-1 text-xl text-primary"></i>{" "}
-                        30 min
-                      </li>
-                    </ul>
-                    <p class="mb-0">
-                      <span class="text-primary font-weight-500">$15.00</span>{" "}
-                      For a one
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="dz-shop-card style-1 flex border border-[#0000001a] rounded-[10px] mb-5 overflow-hidden duration-500 hover:border-transparent hover:shadow-[0px_15px_55px_rgba(34,34,34,0.15)] relative">
-                <div class="dz-media w-[100px] min-w-[100px]">
-                  <img
-                    src="assets/images/shop/pic2.jpg"
-                    alt="/"
-                    class="h-full"
-                  />
-                </div>
-                <div class="dz-content sm:p-5 p-2 flex flex-col w-full">
-                  <div class="dz-head mb-4 flex items-center justify-between">
-                    <h6 class="dz-name mb-0 flex items-center text-base">
-                      <svg
-                        class="mr-[10px]"
-                        width="18"
-                        height="18"
-                        viewBox="0 0 18 18"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <rect
-                          x="0.5"
-                          y="0.5"
-                          width="16"
-                          height="16"
-                          stroke="#0F8A65"
-                        />
-                        <circle cx="8.5" cy="8.5" r="5.5" fill="#0F8A65" />
-                      </svg>
-                      <a href="javascript:void(0);" class="menuDetailModal">
-                        Chicken Patty Burger
-                      </a>
-                    </h6>
-                    <div class="rate bg-[#FE9F10] text-white rounded-[5px] py-[2px] px-[5px] font-medium text-[13px] leading-[18px] inline-block sm:static absolute bottom-[10px] right-3">
-                      <i class="fa-solid fa-star"></i> 4.5
-                    </div>
-                  </div>
-                  <div class="dz-body sm:flex block justify-between">
-                    <ul class="dz-meta flex mx-[-10px]">
-                      <li class="leading-[21px] mx-[10px] text-sm text-[#727272]">
-                        By{" "}
-                        <span class="text-primary font-medium">
-                          {" "}
-                          Burger Farm
-                        </span>
-                      </li>
-                      <li class="leading-[21px] mx-[10px] text-sm text-[#727272]">
-                        <i class="flaticon-scooter mr-1 text-xl text-primary"></i>{" "}
-                        20 min
-                      </li>
-                    </ul>
-                    <p class="mb-0">
-                      <span class="text-primary font-weight-500">$10.00</span>{" "}
-                      For a one
-                    </p>
-                  </div>
-                </div>
-              </div>
+              {products.map((item) => (
+                <ShopStyle1Card
+                  imageUrl={item.imageUrl}
+                  itemName={item.itemName}
+                  vendorName={item.vendorName}
+                  deliveryTime={item.deliveryTime}
+                  price={item.price}
+                  rating={item.rating}
+                  key={item.id}
+                />
+              ))}
             </div>
           </div>
         </div>

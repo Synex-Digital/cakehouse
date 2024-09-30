@@ -1,6 +1,5 @@
 import React from "react";
 import FromOurMenu from "../card/FromOurMenu";
-import Slider from "../shared/Slider";
 
 const products = [
   {

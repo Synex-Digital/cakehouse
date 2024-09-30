@@ -37,7 +37,7 @@ const FromOurMenu = ({ name, img, price, linkToProduct, linkToCart }) => {
                 </Link>
               </h5>
               <span className="text-xl text-yellow font-bold leading-[30px]">
-                {Math.ceil(price)}
+                ${Math.ceil(price)}
               </span>
             </div>
             <Link to={linkToCart}>

@@ -10,8 +10,15 @@ const ShopStyle1 = ({
 }) => {
   return (
     <div className="dz-shop-card style-1 flex border border-[#0000001a] rounded-[10px] mb-5 overflow-hidden duration-500 hover:border-transparent hover:shadow-[0px_15px_55px_rgba(34,34,34,0.15)] relative">
-      <div className="dz-media w-[100px] min-w-[100px]">
-        <img src={imageUrl} alt={itemName} className="h-full" />
+      <div
+        className="dz-media w-[100px] min-w-[100px]"
+        style={{ height: "108px", width: "100px" }}
+      >
+        <img
+          src={imageUrl}
+          alt={itemName}
+          className="h-full w-full object-cover object-center"
+        />
       </div>
       <div className="dz-content sm:p-5 p-2 flex flex-col w-full">
         <div className="dz-head mb-4 flex items-center justify-between">
@@ -46,8 +53,10 @@ const ShopStyle1 = ({
             </li>
           </ul>
           <p className="mb-0">
-            <span className="text-primary font-weight-500">${price}</span> For a
-            one
+            <span className="text-primary font-weight-500">
+              ${Math.ceil(price)}
+            </span>
+            For a one
           </p>
         </div>
       </div>

@@ -1,4 +1,13 @@
 import React from "react";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaShareAlt,
+  FaTwitter,
+} from "react-icons/fa";
+import { IoMdShare } from "react-icons/io";
+import { IoShareSocialOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 const MasterChefs = ({ image, name, position }) => {
@@ -15,7 +24,7 @@ const MasterChefs = ({ image, name, position }) => {
               }}
               src={image}
               alt={name}
-              className="group-hover:scale-110 duration-500 block w-full"
+              className="group-hover:scale-110 duration-500 block"
             />
           </div>
           <div className="content bg-white flex justify-between items-center py-[15px] px-5">
@@ -31,9 +40,11 @@ const MasterChefs = ({ image, name, position }) => {
               <li>
                 <Link
                   to="#"
-                  className="text-xl inline-block h-10 w-10 leading-10 text-center rounded-lg bg-primary text-white pt-[2px]"
+                  className="text-xl inline-block h-10 w-10 leading-10 text-center rounded-lg bg-primary text-white pt-[2px] flex  items-center justify-center"
                 >
-                  <i className="flaticon-share"></i>
+                  <i className="flaticon-share">
+                    <IoShareSocialOutline />
+                  </i>
                 </Link>
                 <ul className="sub-team-social absolute bottom-[20px] z-[1] w-10 rounded-lg opacity-0 duration-500 hover:opacity-100 hover:pb-[80px]">
                   <li className="mb-2 relative">
@@ -41,7 +52,9 @@ const MasterChefs = ({ image, name, position }) => {
                       to="#"
                       className="text-white duration-500 text-center text-lg bg-[#4867AA] h-10 w-10 flex items-center justify-center rounded-lg"
                     >
-                      <i className="fab fa-facebook-f"></i>
+                      <i className="fab fa-facebook-f">
+                        <FaFacebook />
+                      </i>
                     </Link>
                   </li>
                   <li className="mb-2 relative">
@@ -49,7 +62,9 @@ const MasterChefs = ({ image, name, position }) => {
                       to="#"
                       className="text-white duration-500 text-center text-lg bg-[#81B2DF] h-10 w-10 flex items-center justify-center rounded-lg"
                     >
-                      <i className="fab fa-twitter"></i>
+                      <i className="fab fa-twitter">
+                        <FaTwitter />
+                      </i>
                     </Link>
                   </li>
                   <li className="mb-2 relative">
@@ -57,7 +72,9 @@ const MasterChefs = ({ image, name, position }) => {
                       to="#"
                       className="text-white duration-500 text-center text-lg bg-[#D74141] h-10 w-10 flex items-center justify-center rounded-lg"
                     >
-                      <i className="fab fa-instagram"></i>
+                      <i className="fab fa-instagram">
+                        <FaInstagram />
+                      </i>
                     </Link>
                   </li>
                   <li className="mb-2 relative">
@@ -65,7 +82,9 @@ const MasterChefs = ({ image, name, position }) => {
                       to="#"
                       className="text-white duration-500 text-center text-lg bg-[#3A9DF9] h-10 w-10 flex items-center justify-center rounded-lg"
                     >
-                      <i className="fa-brands fa-linkedin-in"></i>
+                      <i className="fa-brands fa-linkedin-in">
+                        <FaLinkedin />
+                      </i>
                     </Link>
                   </li>
                 </ul>
