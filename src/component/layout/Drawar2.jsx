@@ -1,37 +1,35 @@
 import React, { useContext } from "react";
 import { MyContext } from "../../main";
 
-const Drawer = () => {
-  const { isOpenLogin, setIsOpenLogin, setIsOpenSignup } =
-    useContext(MyContext);
-
+const Drawar2 = () => {
+  const { isOpenSignup, setIsOpenSignup } = useContext(MyContext);
   return (
     <div
-      id="drawer1"
-      className={`fixed top-0  z-[999] h-screen overflow-y-auto  translate-x-ful${
-        isOpenLogin ? "" : "l"
+      id="drawer2"
+      class={`fixed top-0 z-[999] h-screen overflow-y-auto translate-x-ful${
+        isOpenSignup ? "" : "l"
       } bg-white dark:bg-gray-800`}
     >
-      <div className="p-0 overflow-y-auto">
+      <div class="p-0 overflow-y-auto">
         <button
+          onClick={() => setIsOpenSignup((prev) => !prev)}
           type="button"
-          className="btn-close hover:text-[#000]"
-          onClick={() => setIsOpenLogin(false)}
+          class="btn-close2 hover:text-[#000]"
         >
           &times;
         </button>
-        <div className="py-[60px] px-[70px]">
-          <div className="login-head text-center">
-            <h4 className="text-[30px] mb-[10px]">Welcome Back</h4>
-            <p className="mb-[35px] text-base">
-              We’d love have you join our 100% remote network of creatord &
+        <div class="py-[60px] px-[70px]">
+          <div class="login-head text-center">
+            <h4 class="text-[30px] mb-[10px]">Join Our Network</h4>
+            <p class="mb-[35px] text-base">
+              We'd love have you join our 100% remote network of creatord &
               freelance.
             </p>
             <button
               name="submit"
               value="submit"
               type="submit"
-              className="btn google-btn w-100 d-block"
+              class="btn google-btn w-100"
             >
               <svg
                 width="26"
@@ -40,67 +38,77 @@ const Drawer = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clipPath="url(#clip0_1381_2836)">
+                <g clip-path="url(#clip0_1383_2836)">
                   <path
                     d="M5.76215 15.7122L4.85713 19.0908L1.54929 19.1607C0.560727 17.3272 0 15.2294 0 13.0001C0 10.8443 0.524266 8.81147 1.45356 7.02148H1.45427L4.39918 7.56139L5.68923 10.4886C5.41922 11.2758 5.27206 12.1208 5.27206 13.0001C5.27216 13.9543 5.44502 14.8687 5.76215 15.7122Z"
                     fill="#FBBB00"
-                  ></path>
+                  />
                   <path
                     d="M25.7722 10.5715C25.9215 11.3579 25.9994 12.1701 25.9994 13.0001C25.9994 13.9308 25.9015 14.8387 25.7151 15.7144C25.0823 18.6944 23.4287 21.2965 21.138 23.138L21.1373 23.1373L17.428 22.948L16.903 19.6708C18.423 18.7794 19.6109 17.3844 20.2366 15.7144H13.2852V10.5715H20.338H25.7722Z"
                     fill="#518EF8"
-                  ></path>
+                  />
                   <path
                     d="M21.1374 23.1371L21.1381 23.1378C18.9103 24.9285 16.0802 26 12.9995 26C8.04883 26 3.74456 23.2329 1.54883 19.1607L5.76169 15.7122C6.85953 18.6421 9.68596 20.7279 12.9995 20.7279C14.4238 20.7279 15.7581 20.3428 16.9031 19.6707L21.1374 23.1371Z"
                     fill="#28B446"
-                  ></path>
+                  />
                   <path
                     d="M21.2974 2.99284L17.086 6.44069C15.901 5.69999 14.5003 5.27211 12.9996 5.27211C9.61098 5.27211 6.73168 7.45352 5.68884 10.4886L1.45384 7.02142H1.45312C3.61671 2.85 7.97527 0 12.9996 0C16.1538 0 19.046 1.12359 21.2974 2.99284Z"
                     fill="#F14336"
-                  ></path>
+                  />
                 </g>
                 <defs>
-                  <clipPath id="clip0_1382_2836">
-                    <rect width="26" height="26" fill="white"></rect>
+                  <clipPath id="clip0_138_536">
+                    <rect width="26" height="26" fill="white" />
                   </clipPath>
                 </defs>
               </svg>
               Sign Up with Google
             </button>
-            <h6 className="login-title">
-              <span className="px-2.5">OR</span>
+            <h6 class="login-title">
+              <span class="px-2.5">OR</span>
             </h6>
           </div>
-
           <form>
-            <div className="mb-[18px]">
-              <label htmlFor="dzEmail" className="form-lable mb-2">
-                Email*
-              </label>
-              <input
-                name="dzEmail"
-                id="dzEmail"
-                required=""
-                type="email"
-                className="input-group flex relative border border-[#dddddd] w-full rounded-md py-2.5 px-5 focus:ring-primary"
-                placeholder="Enter Your Email"
-              />
+            <div class="mb-[18px]">
+              <label class="form-lable mb-2">Name*</label>
+              <div class="input-group">
+                <input
+                  name="dzName"
+                  required
+                  type="text"
+                  class="input-group flex relative border border-[#dddddd] w-full rounded-md py-2.5 px-5 focus:ring-primary"
+                  placeholder="Enter Your Name"
+                />
+              </div>
             </div>
-            <div className="mb-[30px]">
-              <label htmlFor="dzPassword" className="form-lable mb-2">
+            <div class="mb-[18px]">
+              <label class="form-lable mb-2">Email*</label>
+              <div class="input-group">
+                <input
+                  name="dzEmail"
+                  required
+                  type="text"
+                  class="input-group flex relative border border-[#dddddd] w-full rounded-md py-2.5 px-5 focus:ring-primary"
+                  placeholder="Enter Your Email"
+                />
+              </div>
+            </div>
+            <div class="mb-[30px]">
+              <label for="dzPassword1" class="form-lable mb-2">
                 Password*
               </label>
-              <div className="input-group relative">
+              <div class="input-group relative">
                 <input
                   name="dzPassword"
-                  id="dzPassword"
+                  id="dzPassword1"
                   required=""
                   type="password"
-                  className="dzPassword flex relative border border-[#dddddd] w-full rounded-md py-2.5 px-5 focus:ring-primary"
-                  placeholder="Enter Your Password"
+                  class="dzPassword flex relative border border-[#dddddd] w-full rounded-md py-2.5 px-5 focus:ring-primary"
+                  placeholder="Create a Password"
                 />
-                <div className="show-pass">
+                <div class="show-pass">
                   <svg
-                    className="eye-close"
+                    class="eye-close"
                     xmlns="http://www.w3.org/2000/svg"
                     width="22"
                     height="22"
@@ -109,7 +117,7 @@ const Drawer = () => {
                     <path d="M11 17.188a8.71 8.71 0 0 1-1.576-.147.69.69 0 0 1-.579-.678.7.7 0 0 1 .817-.676 7.33 7.33 0 0 0 1.339.127c4.073 0 7.61-3.566 8.722-4.812a18.51 18.51 0 0 0-2.434-2.274.69.69 0 0 1 .335-1.226.69.69 0 0 1 .268.019c.087.024.169.064.24.12a18.79 18.79 0 0 1 3.036 2.939.69.69 0 0 1 0 .848c-.185.234-4.581 5.763-10.167 5.763zm7.361-13.549a.69.69 0 0 0-.972 0l-2.186 2.186a10.68 10.68 0 0 0-2.606-.864c-.527-.099-1.061-.149-1.597-.149-5.585 0-9.982 5.528-10.166 5.763a.69.69 0 0 0 0 .848c.897 1.09 1.915 2.075 3.033 2.936.529.415 1.083.796 1.66 1.142l-1.888 1.887c-.066.063-.118.139-.154.223a.69.69 0 0 0 .145.757.67.67 0 0 0 .226.15c.085.034.175.052.266.051a.69.69 0 0 0 .265-.056c.084-.036.16-.088.223-.154l13.75-13.75a.69.69 0 0 0 0-.972zm-13.65 9.636A18.51 18.51 0 0 1 2.278 11C3.39 9.754 6.927 6.187 11 6.187a7.31 7.31 0 0 1 1.348.127 8.92 8.92 0 0 1 1.814.55L12.895 8.13c-.661-.437-1.453-.632-2.241-.552a3.44 3.44 0 0 0-2.085.989c-.56.56-.91 1.297-.989 2.085a3.44 3.44 0 0 0 .552 2.241l-1.601 1.604a14.43 14.43 0 0 1-1.82-1.222zm4.432-1.392c-.134-.275-.204-.577-.206-.883a2.07 2.07 0 0 1 .6-1.456 2.12 2.12 0 0 1 2.338-.392l-2.731 2.731z"></path>
                   </svg>
                   <svg
-                    className="eye-open"
+                    class="eye-open"
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
@@ -124,21 +132,19 @@ const Drawer = () => {
               name="submit"
               value="submit"
               type="submit"
-              className="btn btn-primary w-full block"
+              class="btn btn-primary w-full block"
             >
-              <span>Sign In</span>
+              <span>Sign Up</span>
             </button>
           </form>
-
-          <p className="text-center mt-[30px] text-base">
-            Not registered?
+          <p class="text-center mt-[30px] text-base">
+            Already have an account?
             <a
-              id="register"
-              className="register text-primary font-medium"
+              class="text-primary font-medium"
               href="#offcanvasLogin"
-              onClick={() => setIsOpenSignup(true)}
+              id="register2"
             >
-              Register here
+              Login
             </a>
           </p>
         </div>
@@ -147,4 +153,4 @@ const Drawer = () => {
   );
 };
 
-export default Drawer;
+export default Drawar2;

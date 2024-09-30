@@ -35,9 +35,10 @@ const Header = () => {
                     <a
                       className="bg-white text-[var(--title)] user-btn white-btn flex items-center justify-center w-[45px] h-[45px] rounded-md shadow-[0_10px_10px_0_rgba(0,0,0,0.1)]"
                       href="#offcanvasLogin"
+                      onClick={() => setIsOpenLogin(true)}
                     >
                       <i className="flaticon-user text-2xl inline-flex">
-                        <FaRegUser onClick={() => setIsOpenLogin(true)} />
+                        <FaRegUser />
                       </i>
                     </a>
                   </li>
