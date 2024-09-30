@@ -173,12 +173,12 @@ const OurMenu1 = () => {
   return (
     <PageLaout>
       <PageBanner name={"Our Menu"} />
-      <section class="lg:pt-[100px] sm:pt-[70px] pt-[50px] lg:pb-[70px] sm:pb-10 pb-5 section-wrapper-7 overflow-hidden relative bg-white">
-        <div class="container">
-          <div class="row inner-section-wrapper md:mb-[50px]">
-            <div class="xl:w-1/3 md:w-1/2 w-full px-[15px]">
-              <div class="menu-head mb-[25px]">
-                <h4 class="title font-lobster text-[34px] font-normal text-primary">
+      <section className="lg:pt-[100px] sm:pt-[70px] pt-[50px] lg:pb-[70px] sm:pb-10 pb-5 section-wrapper-7 overflow-hidden relative bg-white">
+        <div className="container">
+          <div className="row inner-section-wrapper md:mb-[50px]">
+            <div className="xl:w-1/3 md:w-1/2 w-full px-[15px]">
+              <div className="menu-head mb-[25px]">
+                <h4 className="title font-lobster text-[34px] font-normal text-primary">
                   Starters
                 </h4>
               </div>
@@ -192,9 +192,9 @@ const OurMenu1 = () => {
                 />
               ))}
             </div>
-            <div class="xl:w-1/3 md:w-1/2 w-full px-[15px]">
-              <div class="menu-head mb-[25px]">
-                <h4 class="title font-lobster text-[34px] font-normal text-primary">
+            <div className="xl:w-1/3 md:w-1/2 w-full px-[15px]">
+              <div className="menu-head mb-[25px]">
+                <h4 className="title font-lobster text-[34px] font-normal text-primary">
                   Seafood
                 </h4>
               </div>
@@ -209,10 +209,10 @@ const OurMenu1 = () => {
               ))}
             </div>
           </div>
-          <div class="row">
-            <div class="xl:w-1/3 md:w-1/2 w-full px-[15px]">
-              <div class="menu-head mb-[25px]">
-                <h4 class="title font-lobster text-[34px] font-normal text-primary">
+          <div className="row">
+            <div className="xl:w-1/3 md:w-1/2 w-full px-[15px]">
+              <div className="menu-head mb-[25px]">
+                <h4 className="title font-lobster text-[34px] font-normal text-primary">
                   Drinks
                 </h4>
               </div>
@@ -226,9 +226,9 @@ const OurMenu1 = () => {
                 />
               ))}
             </div>
-            <div class="xl:w-1/3 md:w-1/2 w-full px-[15px]">
-              <div class="menu-head mb-[25px]">
-                <h4 class="title font-lobster text-[34px] font-normal text-primary">
+            <div className="xl:w-1/3 md:w-1/2 w-full px-[15px]">
+              <div className="menu-head mb-[25px]">
+                <h4 className="title font-lobster text-[34px] font-normal text-primary">
                   Specials
                 </h4>
               </div>
@@ -242,9 +242,9 @@ const OurMenu1 = () => {
                 />
               ))}
             </div>
-            <div class="xl:w-1/3 md:w-1/2 w-full px-[15px]">
-              <div class="menu-head mb-[25px]">
-                <h4 class="title font-lobster text-[34px] font-normal text-primary">
+            <div className="xl:w-1/3 md:w-1/2 w-full px-[15px]">
+              <div className="menu-head mb-[25px]">
+                <h4 className="title font-lobster text-[34px] font-normal text-primary">
                   Meat
                 </h4>
               </div>
@@ -261,12 +261,12 @@ const OurMenu1 = () => {
           </div>
         </div>
         <img
-          class="bg1 animate-move absolute top-[85px] left-[-110px] max-2xl:hidden"
+          className="bg1 animate-move absolute top-[85px] left-[-110px] max-2xl:hidden"
           src="assets/images/background/pic12.png"
           alt="/"
         />
         <img
-          class="bg2 animate-move absolute right-[-54px] top-[30px] max-2lg:top-auto max-2lg:bottom-0 z-[0] 2xl:w-[600px] md:w-[500px] md:block hidden"
+          className="bg2 animate-move absolute right-[-54px] top-[30px] max-2lg:top-auto max-2lg:bottom-0 z-[0] 2xl:w-[600px] md:w-[500px] md:block hidden"
           src="assets/images/background/pic14.png"
           alt="/"
         />

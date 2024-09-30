@@ -181,73 +181,73 @@ const ProductDetail = () => {
                     />
                   ))}
                 </ul>
-                <div class="lg:flex justify-between">
-                  <ul class="modal-btn-group sm:flex block mx-[-7px]">
-                    <li class="mx-[7px] lg:mb-0 mb-[10px]">
+                <div className="lg:flex justify-between">
+                  <ul className="modal-btn-group sm:flex block mx-[-7px]">
+                    <li className="mx-[7px] lg:mb-0 mb-[10px]">
                       <a
                         href="shop-cart.html"
-                        class="btn shadow-none btn-primary btn-hover-1"
+                        className="btn shadow-none btn-primary btn-hover-1"
                       >
                         <span>
                           Add To Cart{" "}
-                          <i class="flaticon-shopping-bag-1 text-xl ml-[10px] inline-flex">
+                          <i className="flaticon-shopping-bag-1 text-xl ml-[10px] inline-flex">
                             <CiShoppingBasket />
                           </i>
                         </span>
                       </a>
                     </li>
-                    <li class="mx-[7px] lg:mb-0 mb-[10px]">
+                    <li className="mx-[7px] lg:mb-0 mb-[10px]">
                       <a
                         href="shop-checkout.html"
-                        class="btn shadow-none btn-outline-secondary btn-hover-1 text-yellow"
+                        className="btn shadow-none btn-outline-secondary btn-hover-1 text-yellow"
                       >
                         <span>
                           Buy Now{" "}
-                          <i class="flaticon-shopping-cart text-xl ml-[10px] inline-flex">
+                          <i className="flaticon-shopping-cart text-xl ml-[10px] inline-flex">
                             <FiShoppingCart />
                           </i>
                         </span>
                       </a>
                     </li>
                   </ul>
-                  <ul class="avatar-list avatar-list-stacked flex">
-                    <li class="avatar inline-block relative duration-300 hover:z-[1] mr-[-17px]">
+                  <ul className="avatar-list avatar-list-stacked flex">
+                    <li className="avatar inline-block relative duration-300 hover:z-[1] mr-[-17px]">
                       <img
                         src="assets/images/testimonial/small/pic1.jpg"
                         alt=""
-                        class="object-cover rounded-full h-[2.735rem] w-[2.735rem] border-2 border-white"
+                        className="object-cover rounded-full h-[2.735rem] w-[2.735rem] border-2 border-white"
                       />
                     </li>
-                    <li class="avatar inline-block relative duration-300 hover:z-[1] mr-[-17px]">
+                    <li className="avatar inline-block relative duration-300 hover:z-[1] mr-[-17px]">
                       <img
                         src="assets/images/testimonial/small/pic2.jpg"
                         alt=""
-                        class="object-cover rounded-full h-[2.735rem] w-[2.735rem] border-2 border-white"
+                        className="object-cover rounded-full h-[2.735rem] w-[2.735rem] border-2 border-white"
                       />
                     </li>
-                    <li class="avatar inline-block relative duration-300 hover:z-[1] mr-[-17px]">
+                    <li className="avatar inline-block relative duration-300 hover:z-[1] mr-[-17px]">
                       <img
                         src="assets/images/testimonial/small/pic3.jpg"
                         alt=""
-                        class="object-cover rounded-full h-[2.735rem] w-[2.735rem] border-2 border-white"
+                        className="object-cover rounded-full h-[2.735rem] w-[2.735rem] border-2 border-white"
                       />
                     </li>
-                    <li class="avatar inline-block relative duration-300 hover:z-[1] mr-[-17px]">
+                    <li className="avatar inline-block relative duration-300 hover:z-[1] mr-[-17px]">
                       <img
                         src="assets/images/testimonial/small/pic4.jpg"
                         alt=""
-                        class="object-cover rounded-full h-[2.735rem] w-[2.735rem] border-2 border-white"
+                        className="object-cover rounded-full h-[2.735rem] w-[2.735rem] border-2 border-white"
                       />
                     </li>
-                    <li class="avatar inline-block relative duration-300 hover:z-[1] mr-[-17px]">
+                    <li className="avatar inline-block relative duration-300 hover:z-[1] mr-[-17px]">
                       <img
                         src="assets/images/testimonial/small/pic5.jpg"
                         alt=""
-                        class="object-cover rounded-full h-[2.735rem] w-[2.735rem] border-2 border-white"
+                        className="object-cover rounded-full h-[2.735rem] w-[2.735rem] border-2 border-white"
                       />
                     </li>
-                    <li class="avatar inline-block relative duration-300 hover:z-[1]">
-                      <span class="bg-primary h-[2.735rem] w-[2.735rem] leading-[2.735rem] text-center inline-block text-xs rounded-full text-white">
+                    <li className="avatar inline-block relative duration-300 hover:z-[1]">
+                      <span className="bg-primary h-[2.735rem] w-[2.735rem] leading-[2.735rem] text-center inline-block text-xs rounded-full text-white">
                         150+
                       </span>
                     </li>
@@ -259,49 +259,49 @@ const ProductDetail = () => {
         </div>
       </section>
 
-      <div class="pt-0 lg:pb-[100px] sm:pb-10 pb-5 relative bg-white">
-        <div class="container">
-          <div class="row">
-            <div class="w-full px-[15px]">
-              <ul class="nav nav-tabs tabs-style-1 flex flex-wrap mb-[30px] border-b-2 border-[#EAEAEA]">
-                <li class="nav-item mr-[3px] mb-[-1px] rounded-ss-md rounded-se-md overflow-hidden">
+      <div className="pt-0 lg:pb-[100px] sm:pb-10 pb-5 relative bg-white">
+        <div className="container">
+          <div className="row">
+            <div className="w-full px-[15px]">
+              <ul className="nav nav-tabs tabs-style-1 flex flex-wrap mb-[30px] border-b-2 border-[#EAEAEA]">
+                <li className="nav-item mr-[3px] mb-[-1px] rounded-ss-md rounded-se-md overflow-hidden">
                   <button
-                    class="nav-link border-2 border-transparent px-4 py-2 block active web-design-1"
+                    className="nav-link border-2 border-transparent px-4 py-2 block active web-design-1"
                     onClick={descriptionHandler}
                   >
-                    <i class="icon-globe"></i>
-                    <span class="hidden md:inline-block ml-[10px]">
+                    <i className="icon-globe"></i>
+                    <span className="hidden md:inline-block ml-[10px]">
                       Description
                     </span>
                   </button>
                 </li>
-                <li class="nav-item mr-[3px] mb-[-1px] rounded-ss-md rounded-se-md overflow-hidden">
+                <li className="nav-item mr-[3px] mb-[-1px] rounded-ss-md rounded-se-md overflow-hidden">
                   <button
-                    class="nav-link border-2 border-transparent px-4 py-2 block graphic-design-1"
+                    className="nav-link border-2 border-transparent px-4 py-2 block graphic-design-1"
                     onClick={informationHandler}
                   >
-                    <i class="icon-image"></i>
-                    <span class="hidden md:inline-block ml-[10px]">
+                    <i className="icon-image"></i>
+                    <span className="hidden md:inline-block ml-[10px]">
                       Additional Information
                     </span>
                   </button>
                 </li>
-                <li class="nav-item mr-[3px] mb-[-1px] rounded-ss-md rounded-se-md overflow-hidden">
+                <li className="nav-item mr-[3px] mb-[-1px] rounded-ss-md rounded-se-md overflow-hidden">
                   <button
-                    class="nav-link border-2 border-transparent px-4 py-2 block developement-1"
+                    className="nav-link border-2 border-transparent px-4 py-2 block developement-1"
                     onClick={reviewHandler}
                   >
-                    <i class="icon-settings"></i>
-                    <span class="hidden md:inline-block ml-[10px]">
+                    <i className="icon-settings"></i>
+                    <span className="hidden md:inline-block ml-[10px]">
                       Product Review
                     </span>
                   </button>
                 </li>
               </ul>
-              <div class="tab-content">
+              <div className="tab-content">
                 {descriptonIsOpen && (
-                  <div id="web-design-1" class="tab-pane duration-500 active">
-                    <p class="mb-[10px] lg:text-base text-[15px]">
+                  <div id="web-design-1" className="tab-pane duration-500 active">
+                    <p className="mb-[10px] lg:text-base text-[15px]">
                       There are many variations of passages of Lorem Ipsum
                       available, but the majority have suffered alteration in
                       some form, by injected humour, or randomised words which
@@ -309,7 +309,7 @@ const ProductDetail = () => {
                       use a passage of Lorem Ipsum, you need to be sure there
                       isn't hidden in the middle of text.
                     </p>
-                    <p class="lg:text-base text-[15px] mb-4">
+                    <p className="lg:text-base text-[15px] mb-4">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -319,13 +319,13 @@ const ProductDetail = () => {
                       sint occaecat cupidatat non proident, sunt in culpa qui
                       officia deserunt mollit anim id est laborum
                     </p>
-                    <ul class="list-check primary">
-                      <li class="relative lg:text-base text-[15px] py-[6px] pr-[5px] pl-[30px] text-bodycolor">
+                    <ul className="list-check primary">
+                      <li className="relative lg:text-base text-[15px] py-[6px] pr-[5px] pl-[30px] text-bodycolor">
                         But I must explain to you how all this mistaken idea of
                         denouncing pleasure and praising pain was born and I
                         will give you a complete account of the system, and{" "}
                       </li>
-                      <li class="relative lg:text-base text-[15px] py-[6px] pr-[5px] pl-[30px] text-bodycolor">
+                      <li className="relative lg:text-base text-[15px] py-[6px] pr-[5px] pl-[30px] text-bodycolor">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s,
@@ -337,44 +337,44 @@ const ProductDetail = () => {
                 )}
 
                 {addOnIsOpen && (
-                  <div id="graphic-design-1" class="tab-pane duration-500">
-                    <table class="mb-5 border border-[#00000020] align-middle w-full">
+                  <div id="graphic-design-1" className="tab-pane duration-500">
+                    <table className="mb-5 border border-[#00000020] align-middle w-full">
                       <tr>
-                        <td class="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
+                        <td className="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
                           Cheese Burger
                         </td>
-                        <td class="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
+                        <td className="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
                           Small, Medium & Large
                         </td>
                       </tr>
                       <tr>
-                        <td class="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
+                        <td className="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
                           Toppings
                         </td>
-                        <td class="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
+                        <td className="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
                           Onion, Tomato, Olives
                         </td>
                       </tr>
                       <tr>
-                        <td class="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
+                        <td className="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
                           Rating
                         </td>
-                        <td class="p-[15px] font-medium text-yellow border border-[#00000020] ">
-                          <span class="rating-bx">
+                        <td className="p-[15px] font-medium text-yellow border border-[#00000020] ">
+                          <span className="rating-bx">
                             <div className="flex text-md gap-1">
-                              <i class="fas fa-star text-yellow">
+                              <i className="fas fa-star text-yellow">
                                 <FaStar />
                               </i>
-                              <i class="fas fa-star text-yellow">
+                              <i className="fas fa-star text-yellow">
                                 <FaStar />
                               </i>
-                              <i class="fas fa-star text-yellow">
+                              <i className="fas fa-star text-yellow">
                                 <FaStar />
                               </i>
-                              <i class="fas fa-star text-yellow">
+                              <i className="fas fa-star text-yellow">
                                 <FaStar />
                               </i>
-                              <i class="fas fa-star text-yellow">
+                              <i className="fas fa-star text-yellow">
                                 <FaStar />
                               </i>
                             </div>
@@ -382,26 +382,26 @@ const ProductDetail = () => {
                         </td>
                       </tr>
                       <tr>
-                        <td class="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
+                        <td className="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
                           Shipping Charges
                         </td>
-                        <td class="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
+                        <td className="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
                           Free Shipping
                         </td>
                       </tr>
                       <tr>
-                        <td class="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
+                        <td className="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
                           Add More
                         </td>
-                        <td class="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
+                        <td className="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
                           Coke, Cheese, Choco lava
                         </td>
                       </tr>
                       <tr>
-                        <td class="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
+                        <td className="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
                           Delivery Time
                         </td>
-                        <td class="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
+                        <td className="p-[15px] font-medium text-bodycolor border border-[#00000020] ">
                           30 mins
                         </td>
                       </tr>
@@ -410,9 +410,9 @@ const ProductDetail = () => {
                 )}
 
                 {reviewIsOpen && (
-                  <div id="developement-1" class="tab-pane duration-500">
-                    <div class="comments-area" id="comments">
-                      <ul class="comment-list md:mb-[60px] mb-10">
+                  <div id="developement-1" className="tab-pane duration-500">
+                    <div className="comments-area" id="comments">
+                      <ul className="comment-list md:mb-[60px] mb-10">
                         {productsComment.map((item) => (
                           <ProductDetailComment
                             key={item.id}
@@ -423,90 +423,90 @@ const ProductDetail = () => {
                         ))}
                       </ul>
                     </div>
-                    <div class="comment-respond style-1" id="respond">
+                    <div className="comment-respond style-1" id="respond">
                       <h3
-                        class="widget-title xl:mb-[30px] mb-5 pb-3 relative text-2xl"
+                        className="widget-title xl:mb-[30px] mb-5 pb-3 relative text-2xl"
                         id="reply-title"
                       >
                         Add a review
                       </h3>
                       <form
-                        class="flex flex-wrap mx-[-10px]"
+                        className="flex flex-wrap mx-[-10px]"
                         id="commentform"
                         method="post"
                       >
-                        <p class="mb-[30px] px-[10px] sm:w-[50%] w-full comment-form-author">
-                          <label class="hidden" for="author">
-                            Name <span class="required">*</span>
+                        <p className="mb-[30px] px-[10px] sm:w-[50%] w-full comment-form-author">
+                          <label className="hidden" for="author">
+                            Name <span className="required">*</span>
                           </label>
                           <input
                             type="text"
-                            class="h-[60px] py-[15px] bg-[#f3f4f6] px-5 w-full text-[15px] rounded-[6px] placeholder:text-[#666666] border-2 border-[#f3f4f6] focus:border-primary focus:bg-white duration-500"
+                            className="h-[60px] py-[15px] bg-[#f3f4f6] px-5 w-full text-[15px] rounded-[6px] placeholder:text-[#666666] border-2 border-[#f3f4f6] focus:border-primary focus:bg-white duration-500"
                             name="dzName"
                             placeholder="Author"
                             id="author"
                           />
                         </p>
-                        <p class="mb-[30px] px-[10px] sm:w-[50%] w-full comment-form-email">
-                          <label class="hidden" for="email">
-                            Email <span class="required">*</span>
+                        <p className="mb-[30px] px-[10px] sm:w-[50%] w-full comment-form-email">
+                          <label className="hidden" for="email">
+                            Email <span className="required">*</span>
                           </label>
                           <input
                             type="text"
-                            class="h-[60px] py-[15px] bg-[#f3f4f6] px-5 w-full text-[15px] rounded-[6px] placeholder:text-[#666666] border-2 border-[#f3f4f6] focus:border-primary focus:bg-white duration-500"
+                            className="h-[60px] py-[15px] bg-[#f3f4f6] px-5 w-full text-[15px] rounded-[6px] placeholder:text-[#666666] border-2 border-[#f3f4f6] focus:border-primary focus:bg-white duration-500"
                             placeholder="Email"
                             name="dzEmail"
                             id="email"
                           />
                         </p>
-                        <div class="comment-form-rating flex text-bodycolor px-[10px]">
-                          <label class="pull-left mr-[10px] mb-5">
+                        <div className="comment-form-rating flex text-bodycolor px-[10px]">
+                          <label className="pull-left mr-[10px] mb-5">
                             Your Rating
                           </label>
-                          <div class="rating-widget">
-                            <div class="rating-stars">
+                          <div className="rating-widget">
+                            <div className="rating-stars">
                               <ul id="stars">
                                 <li
-                                  class="star inline-block"
+                                  className="star inline-block"
                                   title="Poor"
                                   data-value="1"
                                 >
-                                  <i class="fas fa-star fa-fw text-sm text-[#ccc]"></i>
+                                  <i className="fas fa-star fa-fw text-sm text-[#ccc]"></i>
                                 </li>
                                 <li
-                                  class="star inline-block"
+                                  className="star inline-block"
                                   title="Fair"
                                   data-value="2"
                                 >
-                                  <i class="fas fa-star fa-fw text-sm text-[#ccc]"></i>
+                                  <i className="fas fa-star fa-fw text-sm text-[#ccc]"></i>
                                 </li>
                                 <li
-                                  class="star inline-block"
+                                  className="star inline-block"
                                   title="Good"
                                   data-value="3"
                                 >
-                                  <i class="fas fa-star fa-fw text-sm text-[#ccc]"></i>
+                                  <i className="fas fa-star fa-fw text-sm text-[#ccc]"></i>
                                 </li>
                                 <li
-                                  class="star inline-block"
+                                  className="star inline-block"
                                   title="Excellent"
                                   data-value="4"
                                 >
-                                  <i class="fas fa-star fa-fw text-sm text-[#ccc]"></i>
+                                  <i className="fas fa-star fa-fw text-sm text-[#ccc]"></i>
                                 </li>
                                 <li
-                                  class="star inline-block"
+                                  className="star inline-block"
                                   title="WOW!!!"
                                   data-value="5"
                                 >
-                                  <i class="fas fa-star fa-fw text-sm text-[#ccc]"></i>
+                                  <i className="fas fa-star fa-fw text-sm text-[#ccc]"></i>
                                 </li>
                               </ul>
                             </div>
                           </div>
                         </div>
-                        <p class="comment-form-comment mb-5 px-[10px] w-full">
-                          <label class="hidden" for="comment">
+                        <p className="comment-form-comment mb-5 px-[10px] w-full">
+                          <label className="hidden" for="comment">
                             Comment
                           </label>
                           <textarea
@@ -514,13 +514,13 @@ const ProductDetail = () => {
                             name="comment"
                             placeholder="Type Review Here"
                             id="comment"
-                            class="resize-none h-[120px] py-[15px] bg-[#f3f4f6] px-5 w-full text-[15px] rounded-[6px] placeholder:text-[#666666] border-2 border-[#f3f4f6] focus:border-primary focus:bg-white duration-500"
+                            className="resize-none h-[120px] py-[15px] bg-[#f3f4f6] px-5 w-full text-[15px] rounded-[6px] placeholder:text-[#666666] border-2 border-[#f3f4f6] focus:border-primary focus:bg-white duration-500"
                           ></textarea>
                         </p>
-                        <p class="form-submit mb-5 px-[10px] w-full">
+                        <p className="form-submit mb-5 px-[10px] w-full">
                           <button
                             type="submit"
-                            class="btn btn-primary btn-hover-2"
+                            className="btn btn-primary btn-hover-2"
                             id="submit"
                           >
                             Submit Now

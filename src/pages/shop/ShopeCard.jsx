@@ -281,39 +281,39 @@ const ShopeCard = () => {
                     );
                   })}
 
-                  <div class="order-detail mt-10">
-                    <h6 class="mb-2">Bill Details</h6>
-                    <table class="mb-[25px] w-full border-collapse">
+                  <div className="order-detail mt-10">
+                    <h6 className="mb-2">Bill Details</h6>
+                    <table className="mb-[25px] w-full border-collapse">
                       <tbody>
                         <tr>
-                          <td class="py-[6px] font-medium text-sm leading-[21px] text-bodycolor">
+                          <td className="py-[6px] font-medium text-sm leading-[21px] text-bodycolor">
                             Item Total
                           </td>
-                          <td class="price text-primary font-semibold text-base leading-6 text-right">
+                          <td className="price text-primary font-semibold text-base leading-6 text-right">
                             ${Math.round(totalPrice)}
                           </td>
                         </tr>
-                        <tr class="charges border-b border-dashed border-[#22222233]">
-                          <td class="pt-[6px] pb-[15px] font-medium text-sm leading-[21px] text-bodycolor">
+                        <tr className="charges border-b border-dashed border-[#22222233]">
+                          <td className="pt-[6px] pb-[15px] font-medium text-sm leading-[21px] text-bodycolor">
                             Delivery Charges
                           </td>
-                          <td class="price pt-[6px] pb-[15px] text-primary font-semibold text-base leading-6 text-right">
+                          <td className="price pt-[6px] pb-[15px] text-primary font-semibold text-base leading-6 text-right">
                             ${Math.round(deliveryCharge)}
                           </td>
                         </tr>
-                        <tr class="tax border-b-2 border-[#22222233]">
-                          <td class="pt-[6px] pb-[15px] font-medium text-sm leading-[21px] text-bodycolor">
+                        <tr className="tax border-b-2 border-[#22222233]">
+                          <td className="pt-[6px] pb-[15px] font-medium text-sm leading-[21px] text-bodycolor">
                             Govt Taxes & Other Charges
                           </td>
-                          <td class="price pt-[6px] pb-[15px] text-primary font-semibold text-base leading-6 text-right">
+                          <td className="price pt-[6px] pb-[15px] text-primary font-semibold text-base leading-6 text-right">
                             ${Math.round(tax)}
                           </td>
                         </tr>
-                        <tr class="total">
-                          <td class="py-[6px] font-medium text-sm leading-[21px] text-bodycolor">
+                        <tr className="total">
+                          <td className="py-[6px] font-medium text-sm leading-[21px] text-bodycolor">
                             <h6>Total</h6>
                           </td>
-                          <td class="price text-primary font-semibold text-base leading-6 text-right">
+                          <td className="price text-primary font-semibold text-base leading-6 text-right">
                             ${Math.round(totalPrice + deliveryCharge + tax)}
                           </td>
                         </tr>
@@ -321,11 +321,11 @@ const ShopeCard = () => {
                     </table>
                     <a
                       href="shop-checkout.html"
-                      class="btn btn-primary block text-center btn-md w-full btn-hover-1"
+                      className="btn btn-primary block text-center btn-md w-full btn-hover-1"
                     >
-                      <span class="z-[2] relative block">
+                      <span className="z-[2] relative block">
                         Order Now{" "}
-                        <i class="fa-solid fa-arrow-right ml-[10px]"></i>
+                        <i className="fa-solid fa-arrow-right ml-[10px]"></i>
                       </span>
                     </a>
                   </div>

@@ -346,7 +346,7 @@ const PageHeader = () => {
               </li>
 
               <li>
-                <Link to="contact-us.html">Contact Us</Link>
+                <Link to="/contact-us">Contact Us</Link>
               </li>
             </ul>
 

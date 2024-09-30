@@ -140,61 +140,61 @@ const ServicesDetail = () => {
                 </div>
               </aside>
             </div>
-            <div class="lg:w-4/6 w-full px-[15px] lg:order-2 order-1 mb-[30px]">
-              <div class=".dz-card blog-half dz-card sidebar mb-0">
-                <div class="dz-media rounded-[10px] overflow-hidden">
-                  <img src={items[0].img} alt="/" class="w-full h-auto" />
+            <div className="lg:w-4/6 w-full px-[15px] lg:order-2 order-1 mb-[30px]">
+              <div className=".dz-card blog-half dz-card sidebar mb-0">
+                <div className="dz-media rounded-[10px] overflow-hidden">
+                  <img src={items[0].img} alt="/" className="w-full h-auto" />
                 </div>
 
-                <div class="dz-info pt-[25px]">
-                  <h2 class="lg:text-4xl md:text-3xl text-[1.75rem] mb-2 font-semibold">
+                <div className="dz-info pt-[25px]">
+                  <h2 className="lg:text-4xl md:text-3xl text-[1.75rem] mb-2 font-semibold">
                     Delivery Services in Today's World
                   </h2>
 
-                  <div class="dz-meta mb-5">
+                  <div className="dz-meta mb-5">
                     <ul>
-                      <li class="dz-user">
-                        <a
-                          href="javascript:void(0);"
-                          class="text-black2 flex items-center"
+                      <li className="dz-user">
+                        <Link
+                          to="#"
+                          className="text-black2 flex items-center"
                         >
-                          <i class="fa-solid fa-user text-base text-primary mr-[5px] relative top-0 scale-[1.2]">
+                          <i className="fa-solid fa-user text-base text-primary mr-[5px] relative top-0 scale-[1.2]">
                             <FaUser />
                           </i>
-                          By <span class="text-primary">RK Gupta</span>
-                        </a>
+                          By <span className="text-primary">RK Gupta</span>
+                        </Link>
                       </li>
-                      <li class="dz-comment">
-                        <a href="javascript:void(0);" class="text-black2">
-                          <i class="fa-solid fa-message text-base text-primary mr-[5px] relative top-0 scale-[1.2]"></i>
+                      <li className="dz-comment">
+                        <Link to="#" className="text-black2">
+                          <i className="fa-solid fa-message text-base text-primary mr-[5px] relative top-0 scale-[1.2]"></i>
                           10 Comments
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
-                  <div class="dz-post-text style-1">
-                    <p class="mb-[10px] text-base">
+                  <div className="dz-post-text style-1">
+                    <p className="mb-[10px] text-base">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
+                      printer took Link galley of type and scrambled it to make Link
                       type specimen book.
                     </p>
-                    <p class="text-base">
+                    <p className="text-base">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the 1500s,
                     </p>
                   </div>
-                  <blockquote class="wp-block-quote style-1 text-primary xl:pt-[35px] md:pt-[25px] md:pr-[32px] md:pb-5 md:pl-[100px] p-5 shadow-[0px_15px_50px_rgba(34,34,34,0.15)] mt-[22px] mb-5 rounded-[10px] relative">
-                    <i class="flaticon-right-quote quotes absolute right-auto left-[25px] bottom-auto top-[25px] text-[52px] rotate-180 text-primary md:block hidden">
+                  <blockquote className="wp-block-quote style-1 text-primary xl:pt-[35px] md:pt-[25px] md:pr-[32px] md:pb-5 md:pl-[100px] p-5 shadow-[0px_15px_50px_rgba(34,34,34,0.15)] mt-[22px] mb-5 rounded-[10px] relative">
+                    <i className="flaticon-right-quote quotes absolute right-auto left-[25px] bottom-auto top-[25px] text-[52px] rotate-180 text-primary md:block hidden">
                       <ImQuotesRight />
                     </i>
-                    <p class="2xl:text-[22px] md:text-lg text-base xl:leading-[35px] leading-[22px] text-black2 mb-6">
+                    <p className="2xl:text-[22px] md:text-lg text-base xl:leading-[35px] leading-[22px] text-black2 mb-6">
                       Fragment collings mauris sit amet nibh. Donec sodales
                       sagittis magna. Sed consequat,
                     </p>
-                    <cite class="relative font-semibold text-primary not-italic	text-base">
+                    <cite className="relative font-semibold text-primary not-italic	text-base">
                       Ronald M. Spino
                     </cite>
                   </blockquote>

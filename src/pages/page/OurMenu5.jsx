@@ -128,10 +128,10 @@ const OurMenu5 = () => {
   return (
     <PageLayout>
       <PageBanner name={"Our Menu 5"} />
-      <section class="lg:pt-[100px] sm:pt-[70px] pt-[50px] lg:pb-[70px] sm:pb-10 pb-5 overflow-hidden relative bg-white">
-        <div class="container">
-          <div class="clearfix" id="lightgallery">
-            <ul id="masonry" class="row dlab-gallery-listing gallery">
+      <section className="lg:pt-[100px] sm:pt-[70px] pt-[50px] lg:pb-[70px] sm:pb-10 pb-5 overflow-hidden relative bg-white">
+        <div className="container">
+          <div className="clearfix" id="lightgallery">
+            <ul id="masonry" className="row dlab-gallery-listing gallery">
               {menuItems.map((item) => (
                 <SpecialMenu
                   key={item.id}

@@ -277,8 +277,6 @@ const TeamDetails = () => {
     }
   }, [param.id]);
 
-  console.log(persons);
-
   return (
     <>
       <PageLayout>

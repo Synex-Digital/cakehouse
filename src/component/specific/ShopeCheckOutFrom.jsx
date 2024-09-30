@@ -36,21 +36,21 @@ const ShopForm = () => {
 
             {/* Company and Address Inputs */}
 
-            <div class="form-group mb-5">
+            <div className="form-group mb-5">
               <input
                 name="CompanyType"
                 required
                 type="text"
-                class="h-[50px] py-[10px] px-5 w-full text-[15px] rounded-[6px] placeholder:text-[#666666] focus:border-primary duration-500"
+                className="h-[50px] py-[10px] px-5 w-full text-[15px] rounded-[6px] placeholder:text-[#666666] focus:border-primary duration-500"
                 placeholder="Company Name"
               />
             </div>
-            <div class="form-group mb-5">
+            <div className="form-group mb-5">
               <input
                 name="Address"
                 required
                 type="text"
-                class="h-[50px] py-[10px] px-5 w-full text-[15px] rounded-[6px] placeholder:text-[#666666] focus:border-primary duration-500"
+                className="h-[50px] py-[10px] px-5 w-full text-[15px] rounded-[6px] placeholder:text-[#666666] focus:border-primary duration-500"
                 placeholder="Address"
               />
             </div>
@@ -115,7 +115,7 @@ const ShopForm = () => {
 
           {differentAddressOpen && (
             <div className="widget mb-[50px]">
-              <p class="text-base mb-4">
+              <p className="text-base mb-4">
                 If you have shopped with us before, please enter your details in
                 the boxes below. If you are a new customer please proceed to the
                 Billing & Shipping section.
@@ -138,21 +138,21 @@ const ShopForm = () => {
 
               {/* Company and Address Inputs */}
 
-              <div class="form-group mb-5">
+              <div className="form-group mb-5">
                 <input
                   name="CompanyType"
                   required
                   type="text"
-                  class="h-[50px] py-[10px] px-5 w-full text-[15px] rounded-[6px] placeholder:text-[#666666] focus:border-primary duration-500"
+                  className="h-[50px] py-[10px] px-5 w-full text-[15px] rounded-[6px] placeholder:text-[#666666] focus:border-primary duration-500"
                   placeholder="Company Name"
                 />
               </div>
-              <div class="form-group mb-5">
+              <div className="form-group mb-5">
                 <input
                   name="Address"
                   required
                   type="text"
-                  class="h-[50px] py-[10px] px-5 w-full text-[15px] rounded-[6px] placeholder:text-[#666666] focus:border-primary duration-500"
+                  className="h-[50px] py-[10px] px-5 w-full text-[15px] rounded-[6px] placeholder:text-[#666666] focus:border-primary duration-500"
                   placeholder="Address"
                 />
               </div>
@@ -184,7 +184,7 @@ const ShopForm = () => {
             </div>
           )}
 
-          <p class="text-base mb-4">
+          <p className="text-base mb-4">
             Create an account by entering the information below. If you are a
             returning customer please login at the top of the page.
           </p>
