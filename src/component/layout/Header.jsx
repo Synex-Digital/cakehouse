@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import { Link } from "react-router-dom";
 import { icons } from "../../assets/icons";
 import HoverButton from "../shared/HoverButton";
 import { FaRegUser } from "react-icons/fa6";
 import { FaShoppingBag } from "react-icons/fa";
+import { MyContext } from "../../main";
 
 const Header = () => {
+  const { setIsOpenLogin } = useContext(MyContext);
+
   return (
     <>
       <header className="site-header main-bar-wraper top-0 left-0 w-full z-[999]">
@@ -34,7 +37,7 @@ const Header = () => {
                       href="#offcanvasLogin"
                     >
                       <i className="flaticon-user text-2xl inline-flex">
-                        <FaRegUser />
+                        <FaRegUser onClick={() => setIsOpenLogin(true)} />
                       </i>
                     </a>
                   </li>

@@ -10,8 +10,23 @@ const BannerHome = () => {
     <div className="main-bnr-one overflow-hidden relative">
       <div className="slider-pagination 2xl:left-[50px] xl:left-0 max-xl:left-auto max-xl:right-[20px] z-[2]">
         <div className="main-button-prev lg:block hidden mx-auto">
-          <i className="fa-solid fa-arrow-up">
-            <FaLongArrowAltUp />
+          <i
+            className="fa-solid fa-arrow-up"
+            style={{
+              cursor: "pointer",
+            }}
+          >
+            <FaLongArrowAltUp
+              onClick={() => {
+                setCount((prev) => {
+                  if (prev === 1) {
+                    return 3;
+                  } else {
+                    return prev - 1;
+                  }
+                });
+              }}
+            ></FaLongArrowAltUp>
           </i>
         </div>
         <div className="main-slider-pagination">
@@ -47,8 +62,23 @@ const BannerHome = () => {
           </span>
         </div>
         <div className="main-button-next lg:block hidden mx-auto">
-          <i className="fa-solid fa-arrow-down">
-            <FaArrowDownLong />
+          <i
+            className="fa-solid fa-arrow-down"
+            style={{
+              cursor: "pointer",
+            }}
+          >
+            <FaArrowDownLong
+              onClick={() => {
+                setCount((prev) => {
+                  if (prev === 3) {
+                    return 1;
+                  } else {
+                    return prev + 1;
+                  }
+                });
+              }}
+            />
           </i>
         </div>
       </div>
