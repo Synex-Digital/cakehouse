@@ -4,6 +4,7 @@ import TeamMemberInfo from "../../component/specific/TeamMemberInfo";
 import TeamBio from "../../component/specific/TeamBio";
 import SignatureDishes from "../../component/specific/SignatureDishes";
 import { useParams } from "react-router-dom";
+import PageBanner from "../../component/shared/PageBanner";
 
 const personsData = [
   {
@@ -276,11 +277,10 @@ const TeamDetails = () => {
     }
   }, [param.id]);
 
-  console.log(persons);
-
   return (
     <>
       <PageLayout>
+        <PageBanner name={"Team Details"} />
         <section className="team-details lg:pt-[100px] sm:pt-[70px] pt-[50px] lg:pb-[80px] sm:pb-10 pb-5">
           <div className="container">
             <div className="row">
@@ -336,19 +336,23 @@ const TeamDetails = () => {
                   dishes={[
                     {
                       title: "Sweet Cake",
-                      image: "https://img.freepik.com/free-photo/delicious-cake-with-fruits_23-2150727618.jpg?uid=R165295523&ga=GA1.1.1982624528.1727324533&semt=ais_hybrid",
+                      image:
+                        "https://img.freepik.com/free-photo/delicious-cake-with-fruits_23-2150727618.jpg?uid=R165295523&ga=GA1.1.1982624528.1727324533&semt=ais_hybrid",
                     },
                     {
                       title: "Chicken",
-                      image: "https://img.freepik.com/free-photo/delicious-fried-chicken-plate_144627-27383.jpg?uid=R165295523&ga=GA1.1.1982624528.1727324533&semt=ais_hybrid",
+                      image:
+                        "https://img.freepik.com/free-photo/delicious-fried-chicken-plate_144627-27383.jpg?uid=R165295523&ga=GA1.1.1982624528.1727324533&semt=ais_hybrid",
                     },
                     {
                       title: "Salad",
-                      image: "https://img.freepik.com/free-photo/top-view-tasty-salad-with-vegetables_23-2148515491.jpg?uid=R165295523&ga=GA1.1.1982624528.1727324533&semt=ais_hybrid",
+                      image:
+                        "https://img.freepik.com/free-photo/top-view-tasty-salad-with-vegetables_23-2148515491.jpg?uid=R165295523&ga=GA1.1.1982624528.1727324533&semt=ais_hybrid",
                     },
                     {
                       title: "Burger",
-                      image: "https://img.freepik.com/free-photo/tasty-burger-isolated-white-background-fresh-hamburger-fastfood-with-beef-cheese_90220-1063.jpg?uid=R165295523&ga=GA1.1.1982624528.1727324533&semt=ais_hybrid",
+                      image:
+                        "https://img.freepik.com/free-photo/tasty-burger-isolated-white-background-fresh-hamburger-fastfood-with-beef-cheese_90220-1063.jpg?uid=R165295523&ga=GA1.1.1982624528.1727324533&semt=ais_hybrid",
                     },
                   ]}
                 />

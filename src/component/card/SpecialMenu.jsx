@@ -9,7 +9,6 @@ const SpecialMenu = ({ name, image, description, price, alt, href }) => {
             src={image}
             alt={alt}
             className="rounded-full relative group-hover:animate-spin"
-
             style={{
               width: "132px",
               height: "132px",
@@ -23,7 +22,7 @@ const SpecialMenu = ({ name, image, description, price, alt, href }) => {
             <a href="product-detail.html">{name}</a>
           </h4>
           <p className="mb-2">{description}</p>
-          <h5 className="text-primary">{price}</h5>
+          <h5 className="text-primary">${Math.ceil(price)}</h5>
           <a href={href} className="btn btn-primary btn-hover-2 mt-[18px]">
             Add To Cart
           </a>

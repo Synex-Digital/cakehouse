@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 
-import { icons } from "../../assets/icons";
 import { Link } from "react-router-dom";
+import { icons } from "../../assets/icons";
+import HoverButton from "../shared/HoverButton";
+import { FaRegUser } from "react-icons/fa6";
+import { FaShoppingBag } from "react-icons/fa";
+import { MyContext } from "../../main";
 
 const Header = () => {
+  const { setIsOpenLogin } = useContext(MyContext);
+
   return (
     <>
       <header className="site-header main-bar-wraper top-0 left-0 w-full z-[999]">
@@ -29,13 +35,18 @@ const Header = () => {
                     <a
                       className="bg-white text-[var(--title)] user-btn white-btn flex items-center justify-center w-[45px] h-[45px] rounded-md shadow-[0_10px_10px_0_rgba(0,0,0,0.1)]"
                       href="#offcanvasLogin"
+                      onClick={() => setIsOpenLogin(true)}
                     >
-                      <i className="flaticon-user text-2xl inline-flex"></i>
+                      <i className="flaticon-user text-2xl inline-flex">
+                        <FaRegUser />
+                      </i>
                     </a>
                   </li>
                   <li className="inline-block">
                     <button className="cart-btn bg-white white-btn flex items-center justify-center w-[45px] h-[45px] rounded-md shadow-[0_10px_10px_0_rgba(0,0,0,0.1)]">
-                      <i className="flaticon-shopping-bag-1 text-2xl inline-flex ping-bag-1"></i>
+                      <i className="flaticon-shopping-bag-1 text-2xl inline-flex ping-bag-1">
+                        <FaShoppingBag />
+                      </i>
                       <span className="badge absolute top-[3px] right-[-6px] p-0 h-5 w-5 font-medium text-xs leading-5 bg-[#666666] text-white rounded-[10px]">
                         6
                       </span>
@@ -211,19 +222,19 @@ const Header = () => {
                       <a href="#">Our Menus</a>
                       <ul className="lg:mt-[15px] sub-part">
                         <li>
-                          <a href="our-menu-1.html">Menu Style 1</a>
+                          <Link to="our-menu-1">Menu Style 1</Link>
                         </li>
                         <li>
-                          <a href="our-menu-2.html">Menu Style 2</a>
+                          <Link to="our-menu-2">Menu Style 2</Link>
                         </li>
                         <li>
-                          <a href="our-menu-3.html">Menu Style 3</a>
+                          <Link to="our-menu-3">Menu Style 3</Link>
                         </li>
                         <li>
-                          <a href="our-menu-4.html">Menu Style 4</a>
+                          <Link to="our-menu-4">Menu Style 4</Link>
                         </li>
                         <li>
-                          <a href="our-menu-5.html">Menu Style 5</a>
+                          <Link to="our-menu-5">Menu Style 5</Link>
                         </li>
                       </ul>
                     </li>
@@ -241,22 +252,22 @@ const Header = () => {
                   <a href="#">Shop</a>
                   <ul className="sub-menu">
                     <li className="py-[5px] px-5 relative">
-                      <a href="shop-style-1.html">Shop Style 1</a>
+                      <Link to="shop-style-1">Shop Style 1</Link>
                     </li>
                     <li className="py-[5px] px-5 relative">
-                      <a href="shop-style-2.html">Shop Style 2</a>
+                      <Link to="shop-style-2">Shop Style 2</Link>
                     </li>
                     <li className="py-[5px] px-5 relative">
-                      <a href="shop-cart.html">Shop Cart</a>
+                      <Link to="shop-cart">Shop Cart</Link>
                     </li>
                     <li className="py-[5px] px-5 relative">
-                      <a href="shop-wishlist.html">Shop Wishlist</a>
+                      <Link to="shop-wishlist">Shop Wishlist</Link>
                     </li>
                     <li className="py-[5px] px-5 relative">
-                      <a href="shop-checkout.html">Shop Checkout</a>
+                      <Link to="shop-checkout">Shop Checkout</Link>
                     </li>
                     <li className="py-[5px] px-5 relative">
-                      <a href="product-detail.html">Product Detail</a>
+                      <Link to="product-detail">Product Detail</Link>
                     </li>
                   </ul>
                 </li>
@@ -267,22 +278,16 @@ const Header = () => {
                       {" "}
                       <a href="#">Blog Grid</a>
                       <ul className="sub-part lg:mt-[15px]">
-                        <li>
-                          <a href="blog-grid-2.html">Blog Grid 2</a>
-                        </li>
-                        <li>
-                          <a href="blog-grid-3.html">Blog Grid 3</a>
-                        </li>
-                        <li>
-                          <a href="blog-grid-left-sidebar.html">
-                            Blog Grid Left Sidebar
-                          </a>
-                        </li>
-                        <li>
-                          <a href="blog-grid-right-sidebar.html">
-                            Blog Grid Right Sidebar
-                          </a>
-                        </li>
+                        <HoverButton name={"Blog Grid 2"} link="/blog-grid-2" />
+                        <HoverButton name={"Blog Grid 3"} link="/blog-grid-3" />
+                        <HoverButton
+                          name={"Blog Grid Left Sidebar"}
+                          link="/blog-grid-left-sidebar"
+                        />
+                        <HoverButton
+                          name={"Blog Grid Right Sidebar"}
+                          link="/blog-grid-right-sidebar"
+                        />
                       </ul>
                     </li>
                     <li>
@@ -361,7 +366,7 @@ const Header = () => {
                 </li>
 
                 <li>
-                  <a href="contact-us.html">Contact Us</a>
+                  <Link to="/contact-us">Contact Us</Link>
                 </li>
               </ul>
 

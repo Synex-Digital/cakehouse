@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import HoverButton, { ShopButton } from "./HoverButton";
 
 const PageHeader = () => {
   return (
@@ -222,21 +223,11 @@ const PageHeader = () => {
                   <li>
                     <Link to="#">Our Menus</Link>
                     <ul className="lg:mt-[15px] sub-part">
-                      <li>
-                        <Link to="our-menu-1.html">Menu Style 1</Link>
-                      </li>
-                      <li>
-                        <Link to="our-menu-2.html">Menu Style 2</Link>
-                      </li>
-                      <li>
-                        <Link to="our-menu-3.html">Menu Style 3</Link>
-                      </li>
-                      <li>
-                        <Link to="our-menu-4.html">Menu Style 4</Link>
-                      </li>
-                      <li>
-                        <Link to="our-menu-5.html">Menu Style 5</Link>
-                      </li>
+                      <HoverButton name={"Menu Style 1"} link={"/our-menu-1"} />
+                      <HoverButton name={"Menu Style 2"} link={"/our-menu-2"} />
+                      <HoverButton name={"Menu Style 3"} link={"/our-menu-3"} />
+                      <HoverButton name={"Menu Style 4"} link={"/our-menu-4"} />
+                      <HoverButton name={"Menu Style 5"} link={"/our-menu-5"} />
                     </ul>
                   </li>
                   <li className="header-adv lg:table-cell hidden pt-[30px] px-2.5 pb-5 relative align-top w-1/4">
@@ -247,24 +238,15 @@ const PageHeader = () => {
               <li className="sub-menu-down">
                 <Link to="#">Shop</Link>
                 <ul className="sub-menu">
-                  <li className="py-[5px] px-5 relative">
-                    <Link to="shop-style-1.html">Shop Style 1</Link>
-                  </li>
-                  <li className="py-[5px] px-5 relative">
-                    <Link to="shop-style-2.html">Shop Style 2</Link>
-                  </li>
-                  <li className="py-[5px] px-5 relative">
-                    <Link to="shop-cart.html">Shop Cart</Link>
-                  </li>
-                  <li className="py-[5px] px-5 relative">
-                    <Link to="shop-wishlist.html">Shop Wishlist</Link>
-                  </li>
-                  <li className="py-[5px] px-5 relative">
-                    <Link to="shop-checkout.html">Shop Checkout</Link>
-                  </li>
-                  <li className="py-[5px] px-5 relative">
-                    <Link to="product-detail.html">Product Detail</Link>
-                  </li>
+                  <ShopButton name={"Shop Style 1"} link={"/shop-style-1"} />
+                  <ShopButton name={"Shop Style 2"} link={"/shop-style-2"} />
+                  <ShopButton name={"Shop Cart"} link={"/shop-cart"} />
+                  <ShopButton name={"Shop Wishlist"} link={"/shop-wishlist"} />
+                  <ShopButton name={"Shop Checkout"} link={"/shop-checkout"} />
+                  <ShopButton
+                    name={"Product Detail"}
+                    link={"/product-detail"}
+                  />
                 </ul>
               </li>
               <li className="sub-menu-down has-mega-menu">
@@ -274,22 +256,16 @@ const PageHeader = () => {
                     {" "}
                     <Link to="#">Blog Grid</Link>
                     <ul className="sub-part lg:mt-[15px]">
-                      <li>
-                        <Link to="blog-grid-2.html">Blog Grid 2</Link>
-                      </li>
-                      <li>
-                        <Link to="blog-grid-3.html">Blog Grid 3</Link>
-                      </li>
-                      <li>
-                        <Link to="blog-grid-left-sidebar.html">
-                          Blog Grid Left Sidebar
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="blog-grid-right-sidebar.html">
-                          Blog Grid Right Sidebar
-                        </Link>
-                      </li>
+                      <HoverButton name={"Blog Grid 2"} link="/blog-grid-2" />
+                      <HoverButton name={"Blog Grid 3"} link="/blog-grid-3" />
+                      <HoverButton
+                        name={"Blog Grid Left Sidebar"}
+                        link="/blog-grid-left-sidebar"
+                      />
+                      <HoverButton
+                        name={"Blog Grid Right Sidebar"}
+                        link="/blog-grid-right-sidebar"
+                      />
                     </ul>
                   </li>
                   <li>
@@ -370,7 +346,7 @@ const PageHeader = () => {
               </li>
 
               <li>
-                <Link to="contact-us.html">Contact Us</Link>
+                <Link to="/contact-us">Contact Us</Link>
               </li>
             </ul>
 
